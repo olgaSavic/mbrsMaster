@@ -27,7 +27,7 @@ import myplugin.generator.options.ProjectOptions;
 @SuppressWarnings("serial")
 class GenerateAction extends MDAction{
 	
-	
+
 	public GenerateAction(String name) {			
 		super("", name, null, null);		
 	}
