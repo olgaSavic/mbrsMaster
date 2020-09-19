@@ -21,8 +21,6 @@ public class ${class.name?cap_first}Controller {
     @Autowired
     private ${class.name?cap_first}Service ${class.name?lower_case}Service;
 
-
-
     @GetMapping(value = "all${class.name}s")
     public ResponseEntity getAll${class.name}() {
 

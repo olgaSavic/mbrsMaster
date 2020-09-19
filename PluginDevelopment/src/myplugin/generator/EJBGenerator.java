@@ -50,7 +50,6 @@ public class EJBGenerator extends BasicGenerator {
 				import_str =  cl.getTypePackage() +"." + p.getType();
 				if(!imports.contains(import_str) && import_str != ""){
 					imports.add(import_str);
-					System.out.println(import_str + "string " +  imports + "aaaa");
 				}
 			}
 			try {
