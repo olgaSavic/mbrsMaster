@@ -50,6 +50,10 @@ class GenerateAction extends MDAction {
 			generatePom( root);
 			generateAppProperties(root);
 
+			//generate front
+			generateForm(root);
+			generateList(root);
+
 		} catch (AnalyzeException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
@@ -160,5 +164,24 @@ class GenerateAction extends MDAction {
 		repositoryGenerator.generate();
 
 	}
+
+	private void generateForm(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "form");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("FormGenerator");
+		FrontFormGenerator formGenerator = new FrontFormGenerator(generatorOptions);
+		formGenerator.generate();
+	}
+
+	private void generateList(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "list");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("ListGenerator");
+		FrontListGenerator listGenerator = new FrontListGenerator(generatorOptions);
+		listGenerator.generate();
+	}
+
 
 }

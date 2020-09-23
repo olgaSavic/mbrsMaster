@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/graphics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/graphics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/META-INF/PluginDevelopment.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/myplugin/MyPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/MyPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/myplugin/generator/BasicGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/generator/BasicGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/myplugin/generator/fmmodel/FMEnumeration.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/generator/fmmodel/FMEnumeration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/myplugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myplugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myplugin/MyPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/MyPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/BasicGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/BasicGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/fmmodel/FMEnumeration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/fmmodel/FMEnumeration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1hXv3pKpq5coOsOlGOxgVdoegy7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,10 +66,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\FTN\MASTER\MBRS\MBRS GIT\mbrsMaster\PluginDevelopment\resources\templates\frontend" />
+      <recent name="F:\FTN\MASTER\MBRS\MBRS GIT\mbrsMaster\PluginDevelopment\resources\templates" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="config" type="Application" factoryName="Application">
@@ -59,56 +100,83 @@
       <updated>1600170054802</updated>
       <workItem from="1600170064135" duration="880000" />
       <workItem from="1600691437871" duration="3598000" />
+      <workItem from="1600858780738" duration="6994000" />
+      <workItem from="1600865848414" duration="149000" />
+      <workItem from="1600866146276" duration="1009000" />
+      <workItem from="1600867233032" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600692398394">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600867259821">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600692398394" />
-    <state x="389" y="106" key="FileChooserDialogImpl" timestamp="1600692953593">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1600867259821" />
+    <state x="437" y="126" key="FileChooserDialogImpl" timestamp="1600866691602">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600692953593" />
-    <state width="1323" height="519" key="GridCell.Tab.0.bottom" timestamp="1600698207902">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="437" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1600866691602" />
+    <state width="1493" height="116" key="GridCell.Tab.0.bottom" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600698207902" />
-    <state width="1323" height="519" key="GridCell.Tab.0.center" timestamp="1600698207902">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.0.center" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600698207902" />
-    <state width="1323" height="519" key="GridCell.Tab.0.left" timestamp="1600698207901">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.0.left" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600698207901" />
-    <state width="1323" height="519" key="GridCell.Tab.0.right" timestamp="1600698207902">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.0.right" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600698207902" />
-    <state width="1323" height="519" key="GridCell.Tab.1.bottom" timestamp="1600698207904">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.1.bottom" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600698207904" />
-    <state width="1323" height="519" key="GridCell.Tab.1.center" timestamp="1600698207903">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.1.center" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600698207903" />
-    <state width="1323" height="519" key="GridCell.Tab.1.left" timestamp="1600698207903">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.1.left" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600698207903" />
-    <state width="1323" height="519" key="GridCell.Tab.1.right" timestamp="1600698207903">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state width="1493" height="116" key="GridCell.Tab.1.right" timestamp="1600867164762">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="519" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600698207903" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1600693692067">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="116" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
+    <state x="183" y="0" key="SettingsEditor" timestamp="1600858893458">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600693692067" />
+    <state x="183" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1600858893458" />
   </component>
 </project>

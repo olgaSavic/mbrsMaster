@@ -60,6 +60,14 @@ public class MyPlugin extends com.nomagic.magicdraw.plugins.Plugin {
 		GeneratorOptions appPropOptions = new GeneratorOptions("c:/temp/mbrs/src/main/java", "applicationproperties", "templates", "application.properties.xml", true, "");
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("AppPropertiesGenerator", appPropOptions);
 		appPropOptions.setTemplateDir(pluginDir + File.separator + appPropOptions.getTemplateDir());
+
+		GeneratorOptions formOptions = new GeneratorOptions("c:/temp/mbrs/static/", "jsp_form", "templates", "{0}.java", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("FormGenerator", formOptions);
+		formOptions.setTemplateDir(pluginDir + File.separator + formOptions.getTemplateDir());
+
+		GeneratorOptions listOptions = new GeneratorOptions("c:/temp/mbrs/static/", "jsp_list", "templates", "{0}.java", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("ListGenerator", listOptions);
+		listOptions.setTemplateDir(pluginDir + File.separator + listOptions.getTemplateDir());
 	}
 
 	private NMAction[] getSubmenuActions()
