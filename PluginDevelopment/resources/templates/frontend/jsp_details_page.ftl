@@ -25,7 +25,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <%@ include file="navbar.jsp"%>
+    <%@ include file="navigation.jsp"%>
     <div class="container">
         <div class="text-center mt-2">
             <h5>${class_name_cap} details</h5>

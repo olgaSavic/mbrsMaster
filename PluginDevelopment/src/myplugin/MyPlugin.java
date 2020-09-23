@@ -70,11 +70,11 @@ public class MyPlugin extends com.nomagic.magicdraw.plugins.Plugin {
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("ListGenerator", listOptions);
 		listOptions.setTemplateDir(pluginDir + File.separator + listOptions.getTemplateDir());
 
-		GeneratorOptions navigationOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "navigation", "templates", "{0}.jsp", true, "");
+		GeneratorOptions navigationOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_navigation", "templates", "{0}.jsp", true, "");
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("NavigationGenerator", navigationOptions);
 		navigationOptions.setTemplateDir(pluginDir + File.separator + navigationOptions.getTemplateDir());
 
-		GeneratorOptions detailsOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "details_page", "templates", "{0}.jsp", true, "");
+		GeneratorOptions detailsOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_details_page", "templates", "{0}.jsp", true, "");
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("DetailsGenerator", detailsOptions);
 		detailsOptions.setTemplateDir(pluginDir + File.separator + detailsOptions.getTemplateDir());
 	}

@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
            <a class="navbar-brand font-weight-bold" href="/">${app_name}</a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-	            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
 	          <span class="navbar-toggler-icon"></span>
            </button>
            <div class="collapse navbar-collapse" id="navbarNav">
@@ -26,14 +26,14 @@
                <#list entities as entity>
                   <li class="nav-item">
                   	 <#assign entity_var = "${" + entity.name?uncap_first + "_all}">
-                  	 <c:url var="${entity.name?uncap_first + "_all"}" value="/${entity.name?uncap_first}" />		
+                  	 <c:url var="${entity.name?uncap_first + "_all"}" value="/${entity.name?uncap_first}" />
                      <a class="nav-link" href="${entity_var}">${entity.name?cap_first}</a>
                   </li>
 	           </#list>
                </ul>
                <ul class="nav navbar-nav ml-auto">
                    <li class="nav-item">
-                      <a class="nav-link" href="/logout"> Logout </a>
+                      <a class="nav-link" href="/register"> Register </a>
                    </li>
                    <li class="nav-item">
                       <a class="nav-link" href="/login"> Login </a>

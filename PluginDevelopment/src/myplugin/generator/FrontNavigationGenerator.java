@@ -42,7 +42,7 @@ public class FrontNavigationGenerator extends BasicGenerator{
 
             String appName = "MBRSApp";
 
-            out = getWriter("navbar", ""); // fajl ce se zvati navbar.jsp, a bice u nivou ostalih foldera
+            out = getWriter("navigation", ""); // fajl ce se zvati navbar.jsp, a bice u nivou ostalih foldera
             if (out != null) {
                 context.clear();
 
