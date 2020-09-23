@@ -40,9 +40,9 @@ public class FrontNavbarGenerator extends BasicGenerator{
             String datatables_css = "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css";
             String datatables_js = "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js";
 
-            String appName = "OurPluginApp";
+            String appName = "MBRSApp";
 
-            out = getWriter("", "webapp.WEB-INF.jsp");
+            out = getWriter("navbar", "");
             if (out != null) {
                 context.clear();
 

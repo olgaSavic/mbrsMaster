@@ -52,7 +52,7 @@ public class FrontOverviewGenerator extends BasicGenerator {
                 String servicePackage = replacePackageFragment(modelPackage, "model", "service");
                 String dtoPackage = replacePackageFragment(modelPackage, "model", "dto");
 
-                out = getWriter(uncapFirst(cl.getName()), "webapp.WEB-INF.jsp");
+                out = getWriter(cl.getName(), cl.getTypePackage());
                 if (out != null) {
 
                     context.clear();

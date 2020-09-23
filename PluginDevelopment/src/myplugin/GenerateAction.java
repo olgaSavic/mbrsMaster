@@ -51,6 +51,8 @@ class GenerateAction extends MDAction {
 			generateAppProperties(root);
 
 			//generate front
+			generateNavbar(root);
+			generateOverview(root);
 			generateForm(root);
 			generateList(root);
 
@@ -165,6 +167,7 @@ class GenerateAction extends MDAction {
 
 	}
 
+	// FRONT-END
 	private void generateForm(Package root)
 			throws AnalyzeException {
 		ModelAnalyzer analyzer = new ModelAnalyzer(root, "form");
@@ -181,6 +184,24 @@ class GenerateAction extends MDAction {
 		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("ListGenerator");
 		FrontListGenerator listGenerator = new FrontListGenerator(generatorOptions);
 		listGenerator.generate();
+	}
+
+	private void generateNavbar(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "navbar");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("NavbarGenerator");
+		FrontNavbarGenerator navbarGenerator = new FrontNavbarGenerator(generatorOptions);
+		navbarGenerator.generate();
+	}
+
+	private void generateOverview(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "overview");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("OverviewGenerator");
+		FrontOverviewGenerator overviewGenerator = new FrontOverviewGenerator(generatorOptions);
+		overviewGenerator.generate();
 	}
 
 

@@ -1,4 +1,4 @@
-<#import "/commons/utils.ftl" as u>
+<#import "../commons/utils.ftl" as u>
 <#assign class_name_cap = class.name?cap_first>
 <#assign class_name = class.name?uncap_first>
 <#assign class_name_id = "${" + class_name + ".id" + "}">

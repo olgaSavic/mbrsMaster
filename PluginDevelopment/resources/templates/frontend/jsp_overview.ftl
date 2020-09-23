@@ -1,4 +1,4 @@
-<#import "/commons/utils.ftl" as u>
+<#import "../commons/utils.ftl" as u>
 <#assign class_name_cap = class.name?cap_first>
 <#assign class_name = class.name?uncap_first>
 <#assign class_name_id = "${" + class_name + ".id" + "}">
@@ -7,7 +7,7 @@
 <#assign closing_bracket = "}">
 <#assign empty_word = "empty ">
 <#macro print_complex_property prop>
-	<#local property_name_url = prop.type.name?uncap_first />
+	<#local property_name_url = prop.type?uncap_first />
 	<#local property_name = prop.name />
 	<#local property_name_cap = property_name?cap_first />
 	<#local property_id = "${" + class_name + "." + property_name + ".id" + "}" />
@@ -32,7 +32,7 @@
             <div>
                  <div>
                  <#list properties as property>
-                    <#if entity_properties[property.type.name]??>
+                    <#if entity_properties[property.type]??>
                         <#if property.upper == -1>
                         <#-- Not sure about @ManyToMany -->
                         <div class="m-2">
@@ -40,7 +40,7 @@
                         <c:if test="${ "${" + empty_word  + class_name + "." + property.name + "}" }">[...]</c:if>  
                         <c:forEach items="${ "${" + class_name + "." + property.name + "}" }" var="${property.name}_single">
                         <#assign property_id = "${" + property.name + "_single.id" + "}" />
-                            <span class="font-weight-bold"><a href="<c:url value="/${property.type.name?uncap_first}/${property_id}"/>">${property.name?cap_first} ${property_id}</a></span>
+                            <span class="font-weight-bold"><a href="<c:url value="/${property.type?uncap_first}/${property_id}"/>">${property.name?cap_first} ${property_id}</a></span>
                         </c:forEach>
                         </span>
                         <hr class="my-2">
