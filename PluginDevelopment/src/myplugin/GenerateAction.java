@@ -51,10 +51,10 @@ class GenerateAction extends MDAction {
 			generateAppProperties(root);
 
 			//generate front
-			generateNavbar(root);
-			generateOverview(root);
+			generateNavigation(root);
 			generateForm(root);
 			generateList(root);
+			generateDetails(root);
 
 		} catch (AnalyzeException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
@@ -186,22 +186,22 @@ class GenerateAction extends MDAction {
 		listGenerator.generate();
 	}
 
-	private void generateNavbar(Package root)
+	private void generateNavigation(Package root)
 			throws AnalyzeException {
-		ModelAnalyzer analyzer = new ModelAnalyzer(root, "navbar");
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
 		analyzer.prepareModel();
-		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("NavbarGenerator");
-		FrontNavbarGenerator navbarGenerator = new FrontNavbarGenerator(generatorOptions);
-		navbarGenerator.generate();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("NavigationGenerator");
+		FrontNavigationGenerator navigationGenerator = new FrontNavigationGenerator(generatorOptions);
+		navigationGenerator.generate();
 	}
 
-	private void generateOverview(Package root)
+	private void generateDetails(Package root)
 			throws AnalyzeException {
-		ModelAnalyzer analyzer = new ModelAnalyzer(root, "overview");
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "details");
 		analyzer.prepareModel();
-		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("OverviewGenerator");
-		FrontOverviewGenerator overviewGenerator = new FrontOverviewGenerator(generatorOptions);
-		overviewGenerator.generate();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("DetailsGenerator");
+		FrontDetailsGenerator detailsGenerator = new FrontDetailsGenerator(generatorOptions);
+		detailsGenerator.generate();
 	}
 
 

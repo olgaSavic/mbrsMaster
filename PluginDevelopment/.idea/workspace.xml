@@ -20,20 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/graphics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/graphics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PluginDevelopment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/myplugin/MyPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/MyPlugin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/myplugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myplugin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_form.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_form.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_navbar.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_overview.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_overview.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/navigation.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_overview.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/details_page.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myplugin/MyPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/MyPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/FrontNavbarGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/FrontNavbarGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/FrontOverviewGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/FrontOverviewGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/FrontNavbarGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/FrontNavigationGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/FrontOverviewGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/FrontDetailsGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,45 +143,45 @@
     </state>
     <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600867610989" />
     <state x="437" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1600866691602" />
-    <state width="1323" height="44" key="GridCell.Tab.0.bottom" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.0.bottom" timestamp="1600893679539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600893679539" />
     <state width="1493" height="116" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.0.center" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.0.center" timestamp="1600893679539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600893679539" />
     <state width="1493" height="116" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.0.left" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.0.left" timestamp="1600893679539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600893679539" />
     <state width="1493" height="116" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.0.right" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.0.right" timestamp="1600893679539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600893679539" />
     <state width="1493" height="116" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.1.bottom" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.1.bottom" timestamp="1600893679131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600893679131" />
     <state width="1493" height="116" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.1.center" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.1.center" timestamp="1600893679131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600893679131" />
     <state width="1493" height="116" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.1.left" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.1.left" timestamp="1600893679131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600893679131" />
     <state width="1493" height="116" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
-    <state width="1323" height="44" key="GridCell.Tab.1.right" timestamp="1600870873667">
+    <state width="1323" height="44" key="GridCell.Tab.1.right" timestamp="1600893679131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="44" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600870873667" />
+    <state width="1323" height="44" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600893679131" />
     <state width="1493" height="116" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1600867164762" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1600867530779">
       <screen x="0" y="0" width="1366" height="728" />

@@ -27,9 +27,9 @@ import myplugin.generator.options.TypeMapping;
  *        complete ejb classes
  */
 
-public class FrontOverviewGenerator extends BasicGenerator {
+public class FrontDetailsGenerator extends BasicGenerator {
 
-    public FrontOverviewGenerator(GeneratorOptions generatorOptions) {
+    public FrontDetailsGenerator(GeneratorOptions generatorOptions) {
         super(generatorOptions);
     }
 

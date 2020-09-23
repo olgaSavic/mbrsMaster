@@ -14,9 +14,9 @@ import myplugin.generator.fmmodel.FMClass;
 import myplugin.generator.fmmodel.FMModel;
 import myplugin.generator.options.GeneratorOptions;
 
-public class FrontNavbarGenerator extends BasicGenerator{
+public class FrontNavigationGenerator extends BasicGenerator{
 
-    public FrontNavbarGenerator(GeneratorOptions generatorOptions) {
+    public FrontNavigationGenerator(GeneratorOptions generatorOptions) {
         super(generatorOptions);
         // TODO Auto-generated constructor stub
     }
@@ -42,7 +42,7 @@ public class FrontNavbarGenerator extends BasicGenerator{
 
             String appName = "MBRSApp";
 
-            out = getWriter("navbar", "");
+            out = getWriter("navbar", ""); // fajl ce se zvati navbar.jsp, a bice u nivou ostalih foldera
             if (out != null) {
                 context.clear();
 

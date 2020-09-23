@@ -70,13 +70,13 @@ public class MyPlugin extends com.nomagic.magicdraw.plugins.Plugin {
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("ListGenerator", listOptions);
 		listOptions.setTemplateDir(pluginDir + File.separator + listOptions.getTemplateDir());
 
-		GeneratorOptions navbarOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_navbar", "templates", "{0}.jsp", true, "");
-		ProjectOptions.getProjectOptions().getGeneratorOptions().put("NavbarGenerator", navbarOptions);
-		navbarOptions.setTemplateDir(pluginDir + File.separator + navbarOptions.getTemplateDir());
+		GeneratorOptions navigationOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "navigation", "templates", "{0}.jsp", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("NavigationGenerator", navigationOptions);
+		navigationOptions.setTemplateDir(pluginDir + File.separator + navigationOptions.getTemplateDir());
 
-		GeneratorOptions overviewOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_overview", "templates", "{0}.jsp", true, "");
-		ProjectOptions.getProjectOptions().getGeneratorOptions().put("OverviewGenerator", overviewOptions);
-		overviewOptions.setTemplateDir(pluginDir + File.separator + overviewOptions.getTemplateDir());
+		GeneratorOptions detailsOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "details_page", "templates", "{0}.jsp", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("DetailsGenerator", detailsOptions);
+		detailsOptions.setTemplateDir(pluginDir + File.separator + detailsOptions.getTemplateDir());
 	}
 
 	private NMAction[] getSubmenuActions()
