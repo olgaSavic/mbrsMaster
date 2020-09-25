@@ -9,7 +9,7 @@
 	<#local property_name = prop.name />
 	<#local property_name_cap = property_name?cap_first />
 	<#local property_id = "${" + class_name + "." + property_name  + "}" />
-                            <td><a href="<c:url value="/${property_name_url}/${property_id}"/>"> ${property_id}</a></td>
+                            <td> ${property_id}</td>
 </#macro>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

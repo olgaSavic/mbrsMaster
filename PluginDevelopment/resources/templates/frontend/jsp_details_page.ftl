@@ -10,9 +10,9 @@
 	<#local property_name_url = prop.type?uncap_first />
 	<#local property_name = prop.name />
 	<#local property_name_cap = property_name?cap_first />
-	<#local property_id = "${" + class_name + "." + property_name + ".id" + "}" />
+	<#local property_id = "${" + class_name + "." + property_name + "}" />
                         <div class="m-2">
-                            <span>${property_name_cap}: <span class="font-weight-bold"><a href="<c:url value="/${property_name_url}/${property_id}"/>">${property_name_cap} ${property_id}</a></span></span>
+                            <span>${property_name_cap}: <span class="font-weight-bold">${property_id}</span></span>
                         </div>
                         <hr class="my-2">
 </#macro>

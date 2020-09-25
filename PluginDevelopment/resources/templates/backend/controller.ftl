@@ -37,6 +37,12 @@ public class ${class.name?cap_first}Controller {
         return "${class.name?cap_first}Form";
     }
 
+    @GetMapping(value = "${class.name?lower_case}/{id}")
+    public String show${class.name}Details (@PathVariable("id") Long id, Model model) {
+        model.addAttribute("${class.name?lower_case}", ${class.name?lower_case}Service.getOne(id).orElse(null));
+        return "${class.name?cap_first}Details";
+    }
+
     @GetMapping(value = "one${class.name}")
     public ResponseEntity getOne${class.name}(@RequestParam Long id) {
 
