@@ -11,28 +11,26 @@ import org.springframework.web.bind.annotation.*;
 import uns.ftn.mbrs.model.*;
 import java.util.Optional;
 
-
+import org.springframework.ui.Model;
+import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 
-@RestController
-@RequestMapping(value = "/api/${class.name?lower_case}s/")
+@Controller
 public class ${class.name?cap_first}Controller {
 
     @Autowired
     private ${class.name?cap_first}Service ${class.name?lower_case}Service;
 
     @GetMapping(value = "all${class.name}s")
-    public ResponseEntity getAll${class.name}() {
+    public String getAll${class.name}(Model model) {
 
         List<${class.name?cap_first}> all${class.name?cap_first}s = this.${class.name?lower_case}Service.getAll();
 
-        if (all${class.name?cap_first}s.isEmpty()) {
-        return ResponseEntity.notFound().build();
-        }
+        model.addAttribute("${class.name?lower_case}s", all${class.name?cap_first}s);
 
-        return new ResponseEntity<>(all${class.name?cap_first}s, HttpStatus.OK);
+        return "${class.name?cap_first}List";
     }
 
     @GetMapping(value = "one${class.name}")

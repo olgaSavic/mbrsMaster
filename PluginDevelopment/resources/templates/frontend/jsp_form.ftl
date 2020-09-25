@@ -22,7 +22,7 @@
 <title>New ${class_name_cap} form</title>
 </head>
 <body>
-    <%@ include file="navbar.jsp"%>
+    <%@ include file="navigation.jsp"%>
     <c:url var="action" value="/${class_name}" />		
     <div class="container">
         <div class="row">

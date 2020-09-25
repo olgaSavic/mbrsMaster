@@ -26,7 +26,7 @@
                <#list entities as entity>
                   <li class="nav-item">
                   	 <#assign entity_var = "${" + entity.name?uncap_first + "_all}">
-                  	 <c:url var="${entity.name?uncap_first + "_all"}" value="/${entity.name?uncap_first}" />
+                  	 <c:url var="${entity.name?uncap_first + "_all"}" value="/all${entity.name?cap_first}s" />
                      <a class="nav-link" href="${entity_var}">${entity.name?cap_first}</a>
                   </li>
 	           </#list>

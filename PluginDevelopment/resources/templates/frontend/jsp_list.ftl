@@ -8,8 +8,8 @@
 	<#local property_name_url = prop.type?uncap_first />
 	<#local property_name = prop.name />
 	<#local property_name_cap = property_name?cap_first />
-	<#local property_id = "${" + class_name + "." + property_name + ".id" + "}" />
-                            <td><a href="<c:url value="/${property_name_url}/${property_id}"/>">${property_name_cap} ${property_id}</a></td>
+	<#local property_id = "${" + class_name + "." + property_name  + "}" />
+                            <td><a href="<c:url value="/${property_name_url}/${property_id}"/>"> ${property_id}</a></td>
 </#macro>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
         <title>List of ${class_name_plural}</title>
     </head>
     <body>
-        <%@ include file="navbar.jsp"%>
+        <%@ include file="navigation.jsp"%>
         <script>
 	        $(document).ready( function () {
     	        var table = $('#table_id').DataTable(
@@ -53,10 +53,9 @@
                         	<#if property.upper == -1>
                         	<#-- Not sure about @ManyToMany -->
                         	<td>
-                        	<c:if test="${ "${" + empty_word  + class_name + "." + property.name + "}" }">[...]</c:if> 
-                        	<c:forEach items="${ "${" + class_name + "." + property.name + "}" }" var="${property.name}_single">
-                        	<#assign property_id = "${" + property.name + "_single.id" + "}" />
-                        	<a href="<c:url value="/${property.type?uncap_first}/${property_id}"/>">${property.name?cap_first} ${property_id}</a>
+
+                        	<c:forEach items="${ "${" + class_name + "." + property.name + "}" }">
+
                         	</c:forEach>
                         	</td>
                         	<#else>
