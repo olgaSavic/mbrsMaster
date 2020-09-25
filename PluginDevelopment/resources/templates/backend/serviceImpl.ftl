@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import uns.ftn.mbrs.repository.${class.name}Repository;
 import uns.ftn.mbrs.service.${class.name}Service;
 import uns.ftn.mbrs.model.*;
+import java.util.Optional;
+
 
 import java.util.Date;
 
@@ -33,8 +35,8 @@ public class ${class.name}ServiceImpl implements ${class.name}Service {
     }
 
     @Override
-    public void addTodo(${class.name} ${class.name?uncap_first}) {
-    this.${class.name?uncap_first}Repository.save();
+    public void add(${class.name} ${class.name?uncap_first}) {
+    this.${class.name?uncap_first}Repository.save(${class.name?uncap_first});
     }
 
     @Override
@@ -42,6 +44,7 @@ public class ${class.name}ServiceImpl implements ${class.name}Service {
         Optional <${class.name}> ${class.name?uncap_first} = ${class.name?uncap_first}Repository.findById(id);
         if (${class.name?uncap_first}.isPresent()) {
         ${class.name?uncap_first}Repository.delete(${class.name?uncap_first}.get());
+        }
     }
 }
 

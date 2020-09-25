@@ -16,6 +16,9 @@ ${class.visibility} class ${class.name} {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     ${property.visibility} ${property.type?cap_first} ${property.name};
 
+   <#elseif property.type == "date" || property.type == "long">
+    @Column
+    ${property.visibility} ${property.type?cap_first} ${property.name};
    <#elseif property.upper == 1 >
     @Column
     ${property.visibility} ${property.type} ${property.name};
@@ -61,13 +64,25 @@ ${class.visibility} class ${class.name} {
 
 <#list properties as property>
 <#if property.upper == 1 >
-    public ${property.type} get${property.name?cap_first}(){
+    <#if property.type == "date" || property.type == "long" >
+    public ${property.type?cap_first} get${property.name?cap_first}(){
          return ${property.name};
     }
+    <#else>
+    public ${property.type} get${property.name?cap_first}(){
+    return ${property.name};
+    }
 
-    public void set${property.name?cap_first}(${property.type} ${property.name}){
+    </#if>
+    <#if property.type == "date" || property.type == "long" >
+    public void set${property.name?cap_first}(${property.type?cap_first} ${property.name}){
          this.${property.name} = ${property.name};
     }
+    <#else>
+       public void set${property.name?cap_first}(${property.type} ${property.name}){
+         this.${property.name} = ${property.name};
+    }
+    </#if>
 
 <#elseif property.upper == -1 >
     public Set<${property.type}> get${property.name?cap_first}(){

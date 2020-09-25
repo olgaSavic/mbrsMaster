@@ -2,7 +2,6 @@ package ${class.typePackage}.services;
 
 import java.util.Optional;
 import java.util.List;
-import java.util.Set;
 import uns.ftn.mbrs.model.*;
 import org.springframework.stereotype.Service;
 
