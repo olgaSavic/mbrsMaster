@@ -52,7 +52,7 @@ public class FrontDetailsGenerator extends BasicGenerator {
                 String servicePackage = replacePackageFragment(modelPackage, "model", "service");
                 String dtoPackage = replacePackageFragment(modelPackage, "model", "dto");
 
-                out = getWriter(cl.getName(), cl.getTypePackage());
+                out = getWriter(cl.getName() + "Details", cl.getTypePackage());
                 if (out != null) {
 
                     context.clear();

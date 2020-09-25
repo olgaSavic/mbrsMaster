@@ -170,7 +170,7 @@ class GenerateAction extends MDAction {
 	// FRONT-END
 	private void generateForm(Package root)
 			throws AnalyzeException {
-		ModelAnalyzer analyzer = new ModelAnalyzer(root, "form");
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
 		analyzer.prepareModel();
 		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("FormGenerator");
 		FrontFormGenerator formGenerator = new FrontFormGenerator(generatorOptions);
@@ -179,7 +179,7 @@ class GenerateAction extends MDAction {
 
 	private void generateList(Package root)
 			throws AnalyzeException {
-		ModelAnalyzer analyzer = new ModelAnalyzer(root, "list");
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
 		analyzer.prepareModel();
 		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("ListGenerator");
 		FrontListGenerator listGenerator = new FrontListGenerator(generatorOptions);
@@ -197,7 +197,7 @@ class GenerateAction extends MDAction {
 
 	private void generateDetails(Package root)
 			throws AnalyzeException {
-		ModelAnalyzer analyzer = new ModelAnalyzer(root, "details");
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
 		analyzer.prepareModel();
 		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("DetailsGenerator");
 		FrontDetailsGenerator detailsGenerator = new FrontDetailsGenerator(generatorOptions);

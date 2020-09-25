@@ -53,7 +53,7 @@ public class FrontFormGenerator extends BasicGenerator {
                 String dtoPackage = replacePackageFragment(modelPackage, "model", "dto");
 
                 //out = getWriter(uncapFirst(cl.getName()), "webapp.WEB-INF.jsp");
-                out = getWriter(cl.getName(), cl.getTypePackage());
+                out = getWriter(cl.getName() + "Form", cl.getTypePackage());
                 if (out != null) {
 
                     context.clear();

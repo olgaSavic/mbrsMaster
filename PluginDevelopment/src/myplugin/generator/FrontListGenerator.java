@@ -53,7 +53,7 @@ public class FrontListGenerator extends BasicGenerator {
                 String dtoPackage = replacePackageFragment(modelPackage, "model", "dto");
 
                 //out = getWriter(uncapFirst(cl.getName()), "webapp.WEB-INF.jsp");
-                out = getWriter(cl.getName(), cl.getTypePackage());
+                out = getWriter(cl.getName() + "List", cl.getTypePackage());
                 if (out != null) {
 
                     context.clear();
