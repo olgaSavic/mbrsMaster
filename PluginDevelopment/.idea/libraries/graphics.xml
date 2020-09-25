@@ -1,20 +1,12 @@
 <component name="libraryTable">
   <library name="graphics">
     <CLASSES>
-      <root url="file://C:/Program Files/MagicDraw UML/lib/graphics" />
-      <root url="file://C:/Program Files/MagicDraw UML/lib/webservice" />
-      <root url="file://C:/Program Files/MagicDraw UML/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../../../../../Program Files/MagicDraw UML/lib/graphics" />
+      <root url="file://$PROJECT_DIR$/../../../../../../../../Program Files/MagicDraw UML/lib/webservice" />
     </CLASSES>
     <JAVADOC />
-    <NATIVE>
-      <root url="file://C:/Program Files/MagicDraw UML/lib" />
-    </NATIVE>
-    <SOURCES>
-      <root url="file://C:/Program Files/MagicDraw UML/lib" />
-    </SOURCES>
-    <jarDirectory url="file://C:/Program Files/MagicDraw UML/lib" recursive="false" />
-    <jarDirectory url="file://C:/Program Files/MagicDraw UML/lib/graphics" recursive="false" />
-    <jarDirectory url="file://C:/Program Files/MagicDraw UML/lib/webservice" recursive="false" />
-    <jarDirectory url="file://C:/Program Files/MagicDraw UML/lib" recursive="false" type="SOURCES" />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../../../../Program Files/MagicDraw UML/lib/graphics" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../../../../Program Files/MagicDraw UML/lib/webservice" recursive="false" />
   </library>
 </component>

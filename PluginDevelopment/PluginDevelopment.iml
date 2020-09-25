@@ -96,5 +96,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="graphics" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

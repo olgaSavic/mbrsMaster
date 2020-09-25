@@ -50,6 +50,12 @@ class GenerateAction extends MDAction {
 			generatePom( root);
 			generateAppProperties(root);
 
+			//generate front
+			generateNavigation(root);
+			generateForm(root);
+			generateList(root);
+			generateDetails(root);
+
 		} catch (AnalyzeException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
@@ -160,5 +166,43 @@ class GenerateAction extends MDAction {
 		repositoryGenerator.generate();
 
 	}
+
+	// FRONT-END
+	private void generateForm(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "form");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("FormGenerator");
+		FrontFormGenerator formGenerator = new FrontFormGenerator(generatorOptions);
+		formGenerator.generate();
+	}
+
+	private void generateList(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "list");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("ListGenerator");
+		FrontListGenerator listGenerator = new FrontListGenerator(generatorOptions);
+		listGenerator.generate();
+	}
+
+	private void generateNavigation(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("NavigationGenerator");
+		FrontNavigationGenerator navigationGenerator = new FrontNavigationGenerator(generatorOptions);
+		navigationGenerator.generate();
+	}
+
+	private void generateDetails(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "details");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("DetailsGenerator");
+		FrontDetailsGenerator detailsGenerator = new FrontDetailsGenerator(generatorOptions);
+		detailsGenerator.generate();
+	}
+
 
 }
