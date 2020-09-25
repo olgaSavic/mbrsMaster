@@ -3,11 +3,7 @@ package ${class.typePackage};
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Date;
-import ejb.*;
-
-import ejb.${class.name};
+import uns.ftn.mbrs.model.${class.name};
 
 
 @Repository
