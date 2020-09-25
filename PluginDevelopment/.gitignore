@@ -16,12 +16,13 @@ HELP.md
 *.iws
 *.iml
 *.ipr
+.idea/**/libraries
 
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
-/nbdist/
+/nbdist/h
 /.nb-gradle/
 /build/
 

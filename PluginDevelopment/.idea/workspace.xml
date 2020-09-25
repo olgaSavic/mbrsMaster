@@ -23,25 +23,8 @@
       <change afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/f/6/f68fccc0f2609aebf696d303c9745a8a300221dc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/059c50d080b17a50786111894f00aae83e91915f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/354079a72b91a4280407c16a36f47d1986fd85a5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39f3681e3e3f32ee732df518bcd7d1e0af5cb8e8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4ae9eb38bb5ba88b2ebc3e55121b77366b75bb5a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c24a9499282f9cf9166188384349c930d5d8f75" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58032690c2f00101771c22408613b7eb9d82d8db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/590ed8238225a5eef77ab2d35c8487b923ccd459" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72704b88cb929cff55182926a0a12e379a254dd2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/827526d00b46f3b7343ea7633fb8c2b23a2f363b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b26b038210efe1f8f4019c214720e9309aa55c1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c49747727cc391b392406cf250456da299cfea32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8ef9d5e856a515a0704c244a7edc6cfd5659e76" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d77224c786db210f9d260490cdefa88bd8be3865" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db582df5cb2825b76a0c9dd866954f58a9aa421b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcdefa3067edda870d796ab30c3ebde45d2f1b02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dce47e7a931e2851857c076b564ebaddcc91d59a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +96,7 @@
       <workItem from="1601036715961" duration="55000" />
       <workItem from="1601038734362" duration="181000" />
       <workItem from="1601038923978" duration="204000" />
-      <workItem from="1601040122638" duration="701000" />
+      <workItem from="1601040122638" duration="1166000" />
     </task>
     <task id="LOCAL-00001" summary="izmene">
       <created>1600507519308</created>
@@ -164,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601040378912</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="izmene">
+      <created>1601041102630</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041102630</updated>
+    </task>
+    <task id="LOCAL-00009" summary="izmene">
+      <created>1601041133518</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041133518</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,10 +178,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="48" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600636047362" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1601040503380">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1601041194203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601040503380" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601041194203" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1601039043909">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -193,22 +190,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601030471181" />
-    <state width="996" height="438" key="GridCell.Tab.0.bottom" timestamp="1601040885912">
+    <state width="996" height="438" key="GridCell.Tab.0.bottom" timestamp="1601041300521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="996" height="438" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601040885912" />
-    <state width="996" height="438" key="GridCell.Tab.0.center" timestamp="1601040885911">
+    <state width="996" height="438" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601041300521" />
+    <state width="996" height="438" key="GridCell.Tab.0.center" timestamp="1601041300521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="996" height="438" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601040885911" />
-    <state width="996" height="438" key="GridCell.Tab.0.left" timestamp="1601040885910">
+    <state width="996" height="438" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601041300521" />
+    <state width="996" height="438" key="GridCell.Tab.0.left" timestamp="1601041300519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="996" height="438" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601040885910" />
-    <state width="996" height="438" key="GridCell.Tab.0.right" timestamp="1601040885911">
+    <state width="996" height="438" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601041300519" />
+    <state width="996" height="438" key="GridCell.Tab.0.right" timestamp="1601041300521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="996" height="438" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601040885911" />
+    <state width="996" height="438" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601041300521" />
     <state width="661" height="96" key="GridCell.Tab.1.bottom" timestamp="1601036692190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -241,10 +238,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600696450211" />
-    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1601040388159">
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1601041290366">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601040388159" />
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601041290366" />
     <state x="115" y="50" key="new project wizard" timestamp="1601030543565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
