@@ -27,10 +27,14 @@ public class ${class.name?cap_first}Controller {
     public String getAll${class.name}(Model model) {
 
         List<${class.name?cap_first}> all${class.name?cap_first}s = this.${class.name?lower_case}Service.getAll();
-
         model.addAttribute("${class.name?lower_case}s", all${class.name?cap_first}s);
-
         return "${class.name?cap_first}List";
+    }
+
+    @GetMapping(value = "${class.name?lower_case}/new")
+    public String new${class.name}(Model model) {
+        model.addAttribute("${class.name?lower_case}", new ${class.name?cap_first}());
+        return "${class.name?cap_first}Form";
     }
 
     @GetMapping(value = "one${class.name}")
