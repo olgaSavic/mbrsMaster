@@ -34,6 +34,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72704b88cb929cff55182926a0a12e379a254dd2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/827526d00b46f3b7343ea7633fb8c2b23a2f363b" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b26b038210efe1f8f4019c214720e9309aa55c1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c49747727cc391b392406cf250456da299cfea32" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8ef9d5e856a515a0704c244a7edc6cfd5659e76" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d77224c786db210f9d260490cdefa88bd8be3865" afterDir="false" />
@@ -53,12 +54,15 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1hXv3pKpq5coOsOlGOxgVdoegy7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -107,6 +111,8 @@
       <workItem from="1601029345230" duration="3995000" />
       <workItem from="1601033393396" duration="3291000" />
       <workItem from="1601036715961" duration="55000" />
+      <workItem from="1601038734362" duration="181000" />
+      <workItem from="1601038923978" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="izmene">
       <created>1600507519308</created>
@@ -143,13 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601036535486</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="izmene">
+      <created>1601038817241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601038817241</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="izmene sablona za backend" />
     <MESSAGE value="izmene" />
     <option name="LAST_COMMIT_MESSAGE" value="izmene" />
@@ -159,10 +173,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="48" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600636047362" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1601036769306">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1601039126739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601036769306" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601039126739" />
+    <state x="129" y="55" key="DiffContextDialog" timestamp="1601039043909">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1601039043909" />
     <state x="389" y="106" key="FileChooserDialogImpl" timestamp="1601030471181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -211,10 +229,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600696450211" />
-    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1601036735444">
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1601038867906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601036735444" />
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601038867906" />
     <state x="115" y="50" key="new project wizard" timestamp="1601030543565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
