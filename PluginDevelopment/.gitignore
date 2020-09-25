@@ -16,8 +16,6 @@ HELP.md
 *.iws
 *.iml
 *.ipr
-.idea/**/libraries
-.idea/**/sonarlint
 
 ### NetBeans ###
 /nbproject/private/

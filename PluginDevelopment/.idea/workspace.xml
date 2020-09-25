@@ -23,8 +23,6 @@
       <change afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/f/6/f68fccc0f2609aebf696d303c9745a8a300221dc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +95,7 @@
       <workItem from="1601038734362" duration="181000" />
       <workItem from="1601038923978" duration="204000" />
       <workItem from="1601040122638" duration="1166000" />
+      <workItem from="1601041309497" duration="462000" />
     </task>
     <task id="LOCAL-00001" summary="izmene">
       <created>1600507519308</created>
@@ -161,7 +160,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601041133518</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="izmene">
+      <created>1601041328159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041328159</updated>
+    </task>
+    <task id="LOCAL-00011" summary="izmene">
+      <created>1601041479743</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041479743</updated>
+    </task>
+    <task id="LOCAL-00012" summary="izmene">
+      <created>1601041560112</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041560112</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,10 +198,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="48" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600636047362" />
-    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1601041194203">
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1601041772911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601041194203" />
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601041772911" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1601039043909">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -238,10 +258,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600696450211" />
-    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1601041290366">
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1601041682073">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601041290366" />
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601041682073" />
     <state x="115" y="50" key="new project wizard" timestamp="1601030543565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
