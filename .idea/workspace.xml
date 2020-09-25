@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8b34bf0-ab0a-4ee6-9ec1-895c3c14e2bd" name="Default Changelist" comment="male izmene">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/graphics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mbrsMaster.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1ada94c9d3fc89d24e49f82837839b15c63535d9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d9b5436a3e89c718050750d2f2fd48d2a1ce4ce" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/287eadae90d21fbb725d1b4f1f5c75df00bdd1fc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d9453cdd5c9e193a263a7607986081220a70cfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/334f00ac726b7298c00223c5e34c04b3f05b17b6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/689eec450f7f04f38adb62a8487c2c82820dd817" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69e6653ff3bc8f030fec56955bcd0955c2cb4564" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/701031e4db74f579652809591023efbe34aee41e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4f422807e971d962db66368f0fab31229f11921" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b38dd548b145125408451107ece4530448afd79a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db1671e2233014288b6ae9a8c264103973c5d315" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbc8c1fa5e6f0b12c61d5144f208a9848b98aa58" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2b623fc7ccc133bfd9eca0c1276fc8c4bc42c8c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f68fccc0f2609aebf696d303c9745a8a300221dc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/service.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/serviceImpl.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PluginDevelopment/resources/uml/SpringBootModel.mdzip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PluginDevelopment/resources/uml/SpringBootModel.mdzip.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/bin/myplugin/generator/EJBGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/bin/myplugin/generator/EJBGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/dist/myplugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/dist/myplugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/applicationproperties.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/applicationproperties.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/controller.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/controller.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/ejbclass.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/ejbclass.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/main.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/pom.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/pom.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/repository.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/resources/templates/backend/repository.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/service.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/resources/templates/serviceImpl.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginDevelopment/src/myplugin/generator/EJBGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/PluginDevelopment/src/myplugin/generator/EJBGenerator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1haJaZlfQ1ejleBxD7eLUJuRa7M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PluginDevelopment" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProject\mbrsMaster\PluginDevelopment\resources\templates\backend" />
+      <recent name="C:\Users\Dell\IdeaProject\mbrsMaster\PluginDevelopment\src\proba" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProject\mbrsMaster\PluginDevelopment\src\proba" />
+      <recent name="C:\Users\Dell\IdeaProject\mbrsMaster\PluginDevelopment\resources\uml" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.nomagic.magicdraw.Main" />
+      <module name="mbrsMaster" />
+      <option name="PROGRAM_PARAMETERS" value="-verbose -Xmx800M -Dinstall.root=“C:\Program Files\MagicDraw UML”" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8b34bf0-ab0a-4ee6-9ec1-895c3c14e2bd" name="Default Changelist" comment="" />
+      <created>1600171667104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600171667104</updated>
+      <workItem from="1600171668535" duration="840000" />
+      <workItem from="1600243336638" duration="9179000" />
+      <workItem from="1600410584025" duration="2888000" />
+      <workItem from="1600424593847" duration="2312000" />
+      <workItem from="1600501396255" duration="4687000" />
+    </task>
+    <task id="LOCAL-00001" summary="plugin">
+      <created>1600424669304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600424669304</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="plugin" />
+    <MESSAGE value="male izmene" />
+    <option name="LAST_COMMIT_MESSAGE" value="male izmene" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600414062526">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600414062526" />
+    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600426318491">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1600426318491" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600507101598">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600507101598" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1600507249336">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600507249336" />
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1600507285820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600507285820" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1600507285820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600507285820" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1600507285819">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600507285819" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1600507285820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600507285820" />
+    <state width="1323" height="2" key="GridCell.Tab.1.bottom" timestamp="1600507285821">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600507285821" />
+    <state width="1323" height="2" key="GridCell.Tab.1.center" timestamp="1600507285820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600507285820" />
+    <state width="1323" height="2" key="GridCell.Tab.1.left" timestamp="1600507285820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600507285820" />
+    <state width="1323" height="2" key="GridCell.Tab.1.right" timestamp="1600507285820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600507285820" />
+    <state x="129" y="55" key="MergeDialog" timestamp="1600424716656">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1600424716656" />
+    <state x="321" y="125" key="MultipleFileMergeDialog" timestamp="1600424720683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="321" y="125" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1600424720683" />
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1600506178984">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600506178984" />
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600424674062">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600424674062" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mbrsMaster</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>graphics</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
