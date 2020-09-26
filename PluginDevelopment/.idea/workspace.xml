@@ -20,75 +20,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/DiagnosisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ExaminationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/PacientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ReportItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/SymptomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/TherapyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Diagnosis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Examination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Pacient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Report.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/ReportItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Symptom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Therapy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/DiagnosisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/DoctorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ExaminationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/PacientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ReportItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ReportRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/SymptomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/TherapyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/DiagnosisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/DoctorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ExaminationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/PacientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ReportItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ReportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/SymptomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/TherapyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/DiagnosisServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ExaminationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/PacientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ReportItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ReportServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/SymptomServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/TherapyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PacientDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PacientForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PacientList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportItemDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportItemForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportItemList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/navigation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/templates/backend/controller.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/backend/controller.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_details_page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_details_page.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/DiagnosisController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/DoctorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ExaminationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/PacientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ReportController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ReportItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/SymptomController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/TherapyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Diagnosis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Examination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Pacient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Report.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/ReportItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Symptom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Therapy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/DiagnosisRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/DoctorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ExaminationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/PacientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ReportItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ReportRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/SymptomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/TherapyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/DiagnosisService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/DoctorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ExaminationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/PacientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ReportItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/SymptomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/TherapyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/DiagnosisServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/DoctorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ExaminationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/PacientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ReportItemServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ReportServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/SymptomServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/TherapyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PacientDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PacientForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PacientList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportItemDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportItemForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportItemList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/navigation.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +175,7 @@
       <workItem from="1601043740178" duration="164000" />
       <workItem from="1601044419549" duration="1025000" />
       <workItem from="1601060002604" duration="5028000" />
-      <workItem from="1601067595338" duration="5877000" />
+      <workItem from="1601067595338" duration="9140000" />
     </task>
     <task id="LOCAL-00001" summary="izmene">
       <created>1601045325345</created>
@@ -223,46 +221,46 @@
     </state>
     <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600867610989" />
     <state x="437" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1601060008281" />
-    <state width="746" height="336" key="GridCell.Tab.0.bottom" timestamp="1601075671381">
+    <state width="746" height="136" key="GridCell.Tab.0.bottom" timestamp="1601079593528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601075671381" />
-    <state width="746" height="336" key="GridCell.Tab.0.center" timestamp="1601075671381">
+    <state width="746" height="136" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601079593528" />
+    <state width="746" height="136" key="GridCell.Tab.0.center" timestamp="1601079593528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601075671381" />
-    <state width="746" height="336" key="GridCell.Tab.0.left" timestamp="1601075671380">
+    <state width="746" height="136" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601079593528" />
+    <state width="746" height="136" key="GridCell.Tab.0.left" timestamp="1601079593528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601045451669" />
-    <state width="746" height="336" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601075671380" />
-    <state width="746" height="336" key="GridCell.Tab.0.right" timestamp="1601075671381">
+    <state width="746" height="136" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601079593528" />
+    <state width="746" height="136" key="GridCell.Tab.0.right" timestamp="1601079593528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601075671381" />
-    <state width="746" height="336" key="GridCell.Tab.1.bottom" timestamp="1601075671255">
+    <state width="746" height="136" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601079593528" />
+    <state width="746" height="220" key="GridCell.Tab.1.bottom" timestamp="1601079593516">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601075671255" />
-    <state width="746" height="336" key="GridCell.Tab.1.center" timestamp="1601075671255">
+    <state width="746" height="220" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601079593516" />
+    <state width="746" height="220" key="GridCell.Tab.1.center" timestamp="1601079593515">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601075671255" />
-    <state width="746" height="336" key="GridCell.Tab.1.left" timestamp="1601075671254">
+    <state width="746" height="220" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601079593515" />
+    <state width="746" height="220" key="GridCell.Tab.1.left" timestamp="1601079593515">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601075671254" />
-    <state width="746" height="336" key="GridCell.Tab.1.right" timestamp="1601075671255">
+    <state width="746" height="220" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601079593515" />
+    <state width="746" height="220" key="GridCell.Tab.1.right" timestamp="1601079593516">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="25" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601045451670" />
-    <state width="746" height="336" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601075671255" />
+    <state width="746" height="220" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601079593516" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1600867530779">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

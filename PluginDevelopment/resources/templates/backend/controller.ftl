@@ -43,24 +43,23 @@ public class ${class.name?cap_first}Controller {
         return "${class.name?cap_first}Details";
     }
 
+    /*
     @GetMapping(value = "one${class.name}")
     public ResponseEntity getOne${class.name}(@RequestParam Long id) {
 
         Optional<${class.name?cap_first}> ${class.name?lower_case} = ${class.name?lower_case}Service.getOne(id);
-
         if (${class.name?lower_case} == null) {
-            return ResponseEntity.notFound().build();        }
-
+            return ResponseEntity.notFound().build();
+        }
         return new ResponseEntity(${class.name?lower_case}, HttpStatus.OK);
     }
+    */
 
 
-
-    @DeleteMapping(value = "delete${class.name}")
-    public ResponseEntity delete${class.name}(@RequestParam Long id) {
-
-        ${class.name?lower_case}Service.delete(id);
-        return ResponseEntity.ok().build();
+    @GetMapping("${class.name?lower_case}/delete")
+    public String delete${class.name?cap_first}(@RequestParam("id") String id) {
+        ${class.name?lower_case}Service.delete(Long.parseLong(id));
+        return "${class.name?cap_first}List";
     }
 
     @PostMapping(value = "update${class.name}")
@@ -73,7 +72,6 @@ public class ${class.name?cap_first}Controller {
         ${class.name?lower_case}Service.update(${class.name?lower_case});
         return ResponseEntity.ok().build();
     }
-
 
     @PostMapping(value = "add${class.name}")
     public ResponseEntity add${class.name}(@RequestBody ${class.name?cap_first} ${class.name?lower_case}) {
