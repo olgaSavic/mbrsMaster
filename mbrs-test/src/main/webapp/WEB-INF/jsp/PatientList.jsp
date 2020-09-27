@@ -18,7 +18,8 @@
 	        } );
         </script>
         <div class="container">
-            <h5 class="text-center">List of patients</h5>
+            <br/>
+            <h3 class="text-center">List of patients</h3>
             <div>
                  <a class="btn btn-outline-primary btn-sm float-right mb-3" href="<c:url value="/patient/new"/>">Add new patient</a>
             </div>
@@ -45,9 +46,9 @@
                             <td> ${patient.address}</td>
                             <td> ${patient.phoneNumber}</td>
                         	<td>
-                            	<a class="btn btn-sm btn-info" href="<c:url value="/patient/${patient.id}"/>">Detail</a>
-                            	<a class="btn btn-sm btn-primary" href="<c:url value="/patient/edit?id=${patient.id}"/>">Edit</a>
-                            	<a class="btn btn-sm btn-danger" href="<c:url value="/patient/delete?id=${patient.id}"/>">Delete</a>
+                                <a class="btn btn-sm btn-success" href="<c:url value="/patient/${patient.id}"/>">Detail</a>
+                                <a class="btn btn-sm btn-warning" href="<c:url value="/patient/edit?id=${patient.id}"/>">Edit</a>
+                                <a class="btn btn-sm btn-danger" href="<c:url value="/patient/delete?id=${patient.id}"/>">Delete</a>
                         	</td>
                     	</tr>
                     	</c:forEach>

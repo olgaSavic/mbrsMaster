@@ -31,7 +31,8 @@
 	        } );
         </script>
         <div class="container">
-            <h5 class="text-center">List of ${class_name_plural}</h5>
+            <br/>
+            <h3 class="text-center">List of ${class_name_plural}</h3>
             <div>
                  <a class="btn btn-outline-primary btn-sm float-right mb-3" href="<c:url value="/${class_name}/new"/>">Add new ${class_name}</a>
             </div>
@@ -67,9 +68,9 @@
 			            	</#if>
                     		</#list>
                         	<td>
-                            	<a class="btn btn-sm btn-info" href="<c:url value="/${class_name}/${class_name_id}"/>">Detail</a>
-                            	<a class="btn btn-sm btn-primary" href="<c:url value="/${class_name}/edit?id=${class_name_id}"/>">Edit</a>
-                            	<a class="btn btn-sm btn-danger" href="<c:url value="/${class_name}/delete?id=${class_name_id}"/>">Delete</a>
+                                <a class="btn btn-sm btn-success" href="<c:url value="/${class_name}/${class_name_id}"/>">Detail</a>
+                                <a class="btn btn-sm btn-warning" href="<c:url value="/${class_name}/edit?id=${class_name_id}"/>">Edit</a>
+                                <a class="btn btn-sm btn-danger" href="<c:url value="/${class_name}/delete?id=${class_name_id}"/>">Delete</a>
                         	</td>
                     	</tr>
                     	</c:forEach>

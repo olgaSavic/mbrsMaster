@@ -18,7 +18,8 @@
 	        } );
         </script>
         <div class="container">
-            <h5 class="text-center">List of examinations</h5>
+            <br/>
+            <h3 class="text-center">List of examinations</h3>
             <div>
                  <a class="btn btn-outline-primary btn-sm float-right mb-3" href="<c:url value="/examination/new"/>">Add new examination</a>
             </div>
@@ -37,9 +38,9 @@
                             <td> ${examination.id}</td>
                             <td> ${examination.date}</td>
                         	<td>
-                            	<a class="btn btn-sm btn-info" href="<c:url value="/examination/${examination.id}"/>">Detail</a>
-                            	<a class="btn btn-sm btn-primary" href="<c:url value="/examination/edit?id=${examination.id}"/>">Edit</a>
-                            	<a class="btn btn-sm btn-danger" href="<c:url value="/examination/delete?id=${examination.id}"/>">Delete</a>
+                                <a class="btn btn-sm btn-success" href="<c:url value="/examination/${examination.id}"/>">Detail</a>
+                                <a class="btn btn-sm btn-warning" href="<c:url value="/examination/edit?id=${examination.id}"/>">Edit</a>
+                                <a class="btn btn-sm btn-danger" href="<c:url value="/examination/delete?id=${examination.id}"/>">Delete</a>
                         	</td>
                     	</tr>
                     	</c:forEach>

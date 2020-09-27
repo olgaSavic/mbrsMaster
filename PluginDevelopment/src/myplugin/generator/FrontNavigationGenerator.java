@@ -40,7 +40,7 @@ public class FrontNavigationGenerator extends BasicGenerator{
             String datatables_css = "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css";
             String datatables_js = "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js";
 
-            String appName = "MBRSApp";
+            String appName = "MBRS Doctors Application";
 
             out = getWriter("navigation", ""); // fajl ce se zvati navbar.jsp, a bice u nivou ostalih foldera
             if (out != null) {

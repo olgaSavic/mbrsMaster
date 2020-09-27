@@ -47,8 +47,8 @@ class GenerateAction extends MDAction {
 
 			//generate repository
 			generateRepository(root);
-			generatePom( root);
-			generateAppProperties(root);
+			//generatePom( root);
+			//generateAppProperties(root);
 
 			//generate front
 			generateNavigation(root);
