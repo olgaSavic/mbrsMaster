@@ -16,27 +16,37 @@
                         <div class="m-2">
                             <span>Id: <span class="font-weight-bold">${patient.id}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Name: <span class="font-weight-bold">${patient.name}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Surname: <span class="font-weight-bold">${patient.surname}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Jmbg: <span class="font-weight-bold">${patient.jmbg}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Address: <span class="font-weight-bold">${patient.address}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>PhoneNumber: <span class="font-weight-bold">${patient.phoneNumber}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
+
+                             <div class="m-2">
+                                 <span>Doctor: <span class="font-weight-bold">${patient.doctor.id}</span></span>
+                             </div>
+                             <hr class="my-2">
+
+
+
+
+
                  </div>
             </div>
             <a  href="<c:url value="/patient/edit?id=${patient.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
