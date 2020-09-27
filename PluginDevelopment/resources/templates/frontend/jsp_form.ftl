@@ -23,7 +23,7 @@
 </head>
 <body>
     <%@ include file="navigation.jsp"%>
-    <c:url var="action" value="/${class_name}" />		
+    <c:url var="action" value="/add${class_name_cap}" />
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>
@@ -32,26 +32,26 @@
                 <form:form class="p-2" action="${opening_bracket}action${closing_bracket}" method="post" modelAttribute="${class_name}">
                 <#list properties as property>
                     <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
-                    <#if entity_properties[property.type]??>
-                    <#if property.upper == -1>
-                    <#-- @ManyToMany  or @OneToMany -->
-                    <div class="form-group " <#if property.persistentAnnotationName == "@OneToMany">style="display: none;"</#if>>
-                        ${label}
-                        <#-- TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY -->
-                        <form:checkboxes items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" path="${property.name}" element="div class='checkbox border rounded p-2' " itemValue="id"/>		
-                    </div>
-                    <#elseif property.upper == 1>
-                    <#-- @ManyToOne or @OneToOne -->
-                    <div class="form-group">
-                        ${label}
-                        <form:select path="${property.name}" cssClass="form-control">
-                            <option value="-1">Select a ${property.name}</option>
-                            <#-- TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY -->
-                            <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>
-                        </form:select>	
-                    </div>
-                    </#if>
-                    <#elseif enum_types?seq_contains(property.type)>
+<#--                    <#if entity_properties[property.type]??>-->
+<#--                    <#if property.upper == -1>-->
+<#--                    &lt;#&ndash; @ManyToMany  or @OneToMany &ndash;&gt;-->
+<#--                    <div class="form-group " <#if property.persistentAnnotationName == "@OneToMany">style="display: none;"</#if>>-->
+<#--                        ${label}-->
+<#--                        &lt;#&ndash; TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY &ndash;&gt;-->
+<#--                        <form:checkboxes items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" path="${property.name}" element="div class='checkbox border rounded p-2' " itemValue="id"/>-->
+<#--                    </div>-->
+<#--                    <#elseif property.upper == 1>-->
+<#--                    &lt;#&ndash; @ManyToOne or @OneToOne &ndash;&gt;-->
+<#--                    <div class="form-group">-->
+<#--                        ${label}-->
+<#--                        <form:select path="${property.name}" cssClass="form-control">-->
+<#--                            <option value="-1">Select a ${property.name}</option>-->
+<#--                            &lt;#&ndash; TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY &ndash;&gt;-->
+<#--                            <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>-->
+<#--                        </form:select>-->
+<#--                    </div>-->
+<#--                    </#if>-->
+                    <#if enum_types?seq_contains(property.type)>
                     	${label}
                         <form:select path="${property.name}" cssClass="form-control">
                             <option value="">Select a ${property.name}</option>

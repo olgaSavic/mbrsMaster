@@ -62,6 +62,7 @@ public class FrontFormGenerator extends BasicGenerator {
                     List<TypeMapping> typeMappings = ProjectOptions.getProjectOptions().getTypeMappings();
                     for(TypeMapping type: typeMappings) {
                         javaTypes.add(type.getDestType());
+                        System.out.println("JavaType: " + type.getDestType());
                     }
 
                     List<String> enumerationTypes = new ArrayList<String>();
@@ -69,6 +70,7 @@ public class FrontFormGenerator extends BasicGenerator {
                     List<FMEnumeration> enumerations = FMModel.getInstance().getEnumerations();
                     for(FMEnumeration enumVal: enumerations) {
                         enumerationTypes.add(enumVal.getName());
+                        System.out.println("EnumerationType: " + enumVal.getName());
                         enumerationValues.put(enumVal.getName(), enumVal.getValues());
 
                     }

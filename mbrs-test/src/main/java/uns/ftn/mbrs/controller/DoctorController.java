@@ -1,0 +1,106 @@
+package uns.ftn.mbrs.controller;
+import java.util.*;
+
+
+import uns.ftn.mbrs.model.*;
+
+import uns.ftn.mbrs.service.DoctorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import uns.ftn.mbrs.model.*;
+import java.util.Optional;
+
+import org.springframework.ui.Model;
+import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+
+@Controller
+public class DoctorController {
+
+    @Autowired
+    private DoctorService doctorService;
+
+    @GetMapping(value = "allDoctors")
+    public String getAllDoctor(Model model) {
+
+        List<Doctor> allDoctors = this.doctorService.getAll();
+        model.addAttribute("doctors", allDoctors);
+        return "DoctorList";
+    }
+
+    @GetMapping(value = "doctor/new")
+    public String newDoctor(Model model) {
+        model.addAttribute("doctor", new Doctor());
+        return "DoctorForm";
+    }
+
+    @GetMapping(value = "doctor/{id}")
+    public String showDoctorDetails (@PathVariable("id") Long id, Model model) {
+        model.addAttribute("doctor", doctorService.getOne(id).orElse(null));
+        return "DoctorDetails";
+    }
+
+    /*
+    @GetMapping(value = "oneDoctor")
+    public ResponseEntity getOneDoctor(@RequestParam Long id) {
+
+        Optional<Doctor> doctor = doctorService.getOne(id);
+        if (doctor == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return new ResponseEntity(doctor, HttpStatus.OK);
+    }
+    */
+
+
+    @GetMapping("doctor/delete")
+    public String deleteDoctor(@RequestParam("id") String id) {
+        doctorService.delete(Long.parseLong(id));
+        return "DoctorList";
+    }
+
+    @PostMapping(value = "updateDoctor")
+    public ResponseEntity updateDoctor(@RequestBody Doctor doctor) {
+
+        if (doctor == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        doctorService.update(doctor);
+        return ResponseEntity.ok().build();
+    }
+    /*
+    @PostMapping(value = "addDoctor")
+    public String addDoctor(@RequestBody Doctor doctor) {
+
+        Doctor Doctor = Doctor.builder()
+                .id(Doctor.getId())
+
+                .surname(Doctor.getSurname())
+
+                .jmbg(Doctor.getJmbg())
+
+                .phoneNumber(Doctor.getPhoneNumber())
+
+                .name(Doctor.getName())
+
+                .specialty(Doctor.getSpecialty())
+
+        .build();
+
+        doctorService.add(Doctor);
+        return "DoctorList";
+    }
+    */
+
+
+
+
+
+}
+
+
+
