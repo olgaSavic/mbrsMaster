@@ -5,17 +5,17 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>New ReportItem form</title>
+<title>New Item form</title>
 </head>
 <body>
     <%@ include file="navigation.jsp"%>
-    <c:url var="action" value="/addReportItem" />
+    <c:url var="action" value="/addItem" />
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 border p-4">
-                <h5 class="text-center">New ReportItem form</h5>
-                <form:form class="p-2" action="${action}" method="post" modelAttribute="reportItem">
+                <h5 class="text-center">New Item form</h5>
+                <form:form class="p-2" action="${action}" method="post" modelAttribute="item">
                     <div class="form-group">
                         <form:label path="id">Id</form:label>
                         <form:input cssClass="form-control" path="id" />
@@ -31,7 +31,7 @@
 
 
                     <div>
-                         <button class="btn btn-success float-right" type="submit">Add reportItem</button>
+                         <button class="btn btn-success float-right" type="submit">Add item</button>
                     </div>      
                  </form:form>
             </div>

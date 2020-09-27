@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>List of diagnosises</title>
+        <title>List of diagnosiss</title>
     </head>
     <body>
         <%@ include file="navigation.jsp"%>
@@ -18,7 +18,7 @@
 	        } );
         </script>
         <div class="container">
-            <h5 class="text-center">List of diagnosises</h5>
+            <h5 class="text-center">List of diagnosiss</h5>
             <div>
                  <a class="btn btn-outline-primary btn-sm float-right mb-3" href="<c:url value="/diagnosis/new"/>">Add new diagnosis</a>
             </div>
@@ -33,7 +33,7 @@
                     	</tr>
                     </thead>
                     <tbody>
-                    	<c:forEach items="${diagnosises}" var="diagnosis">
+                    	<c:forEach items="${diagnosiss}" var="diagnosis">
                     	<tr>
                             <td> ${diagnosis.id}</td>
                             <td> ${diagnosis.name}</td>

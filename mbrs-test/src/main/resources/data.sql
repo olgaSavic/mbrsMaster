@@ -1,6 +1,6 @@
-insert into mbrs.report_item(id, description, name)
+insert into mbrs.item(id, description, name)
 	values (1, "Report Description", "First report");
-insert into mbrs.report_item(id, description, name)
+insert into mbrs.item(id, description, name)
 	values (2, "Second Report Description", "Second report");
 
 insert into mbrs.symptom(id, description, name)

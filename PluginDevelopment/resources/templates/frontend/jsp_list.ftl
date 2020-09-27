@@ -2,7 +2,7 @@
 <#assign class_name_cap = class.name?cap_first>
 <#assign class_name = class.name?uncap_first>
 <#assign class_name_id = "${" + class_name + ".id" + "}">
-<#assign class_name_plural = u.plural(class_name)>
+<#assign class_name_plural = class_name + "s">
 <#assign empty_word = "empty ">
 <#macro print_complex_property prop>
 	<#local property_name_url = prop.type?uncap_first />

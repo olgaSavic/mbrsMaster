@@ -27,7 +27,6 @@ public class SymptomController {
 
     @GetMapping(value = "allSymptoms")
     public String getAllSymptom(Model model) {
-
         List<Symptom> allSymptoms = this.symptomService.getAll();
         model.addAttribute("symptoms", allSymptoms);
         return "SymptomList";
@@ -39,46 +38,34 @@ public class SymptomController {
         return "SymptomForm";
     }
 
+    @GetMapping(value = "symptom/edit")
+    public String editSymptom(@RequestParam("id") String id, Model model) {
+        Symptom symptom = symptomService.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("symptom", symptom);
+        return "SymptomForm";
+    }
+
     @GetMapping(value = "symptom/{id}")
     public String showSymptomDetails (@PathVariable("id") Long id, Model model) {
         model.addAttribute("symptom", symptomService.getOne(id).orElse(null));
         return "SymptomDetails";
     }
 
-    /*
-    @GetMapping(value = "oneSymptom")
-    public ResponseEntity getOneSymptom(@RequestParam Long id) {
-
-        Optional<Symptom> symptom = symptomService.getOne(id);
-        if (symptom == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(symptom, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("symptom/delete")
-    public String deleteSymptom(@RequestParam("id") String id) {
+    public String deleteSymptom(@RequestParam("id") String id, Model model) {
         symptomService.delete(Long.parseLong(id));
+        List<Symptom> allSymptoms = this.symptomService.getAll();
+        model.addAttribute("symptoms", allSymptoms);
         return "SymptomList";
     }
 
-    @PostMapping(value = "updateSymptom")
-    public ResponseEntity updateSymptom(@RequestBody Symptom symptom) {
-
-        if (symptom == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        symptomService.update(symptom);
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "addSymptom")
-    public String addSymptom(@ModelAttribute Symptom symptom) {
-
+    public String addSymptom(@ModelAttribute Symptom symptom, Model model) {
         symptomService.add(symptom);
+        List<Symptom> allSymptoms = this.symptomService.getAll();
+        model.addAttribute("symptoms", allSymptoms);
         return "SymptomList";
     }
 

@@ -38,7 +38,6 @@ public class ${class.name?cap_first}Controller {
 
     @GetMapping(value = "all${class.name}s")
     public String getAll${class.name}(Model model) {
-
         List<${class.name?cap_first}> all${class.name?cap_first}s = this.${class.name?lower_case}Service.getAll();
         model.addAttribute("${class.name?lower_case}s", all${class.name?cap_first}s);
         return "${class.name?cap_first}List";
@@ -56,46 +55,40 @@ public class ${class.name?cap_first}Controller {
         return "${class.name?cap_first}Form";
     }
 
+    @GetMapping(value = "${class.name?lower_case}/edit")
+    public String edit${class.name}(@RequestParam("id") String id, Model model) {
+        ${class.name} ${class.name?lower_case} = ${class.name?lower_case}Service.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("${class.name?lower_case}", ${class.name?lower_case});
+        <#list class.FMLinkedProperty as property>
+            <#if property.upper == 1 && property.oppositeEnd== -1>
+                List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
+                model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
+            </#if>
+        </#list>
+        return "${class.name?cap_first}Form";
+    }
+
     @GetMapping(value = "${class.name?lower_case}/{id}")
     public String show${class.name}Details (@PathVariable("id") Long id, Model model) {
         model.addAttribute("${class.name?lower_case}", ${class.name?lower_case}Service.getOne(id).orElse(null));
         return "${class.name?cap_first}Details";
     }
 
-    /*
-    @GetMapping(value = "one${class.name}")
-    public ResponseEntity getOne${class.name}(@RequestParam Long id) {
-
-        Optional<${class.name?cap_first}> ${class.name?lower_case} = ${class.name?lower_case}Service.getOne(id);
-        if (${class.name?lower_case} == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(${class.name?lower_case}, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("${class.name?lower_case}/delete")
-    public String delete${class.name?cap_first}(@RequestParam("id") String id) {
+    public String delete${class.name?cap_first}(@RequestParam("id") String id, Model model) {
         ${class.name?lower_case}Service.delete(Long.parseLong(id));
+        List<${class.name?cap_first}> all${class.name?cap_first}s = this.${class.name?lower_case}Service.getAll();
+        model.addAttribute("${class.name?lower_case}s", all${class.name?cap_first}s);
         return "${class.name?cap_first}List";
     }
 
-    @PostMapping(value = "update${class.name}")
-    public ResponseEntity update${class.name}(@RequestBody ${class.name?cap_first} ${class.name?lower_case}) {
-
-        if (${class.name?lower_case} == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        ${class.name?lower_case}Service.update(${class.name?lower_case});
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "add${class.name}")
-    public String add${class.name}(@ModelAttribute ${class.name?cap_first} ${class.name?lower_case}) {
-
+    public String add${class.name}(@ModelAttribute ${class.name?cap_first} ${class.name?lower_case}, Model model) {
         ${class.name?lower_case}Service.add(${class.name?lower_case});
+        List<${class.name?cap_first}> all${class.name?cap_first}s = this.${class.name?lower_case}Service.getAll();
+        model.addAttribute("${class.name?lower_case}s", all${class.name?cap_first}s);
         return "${class.name?cap_first}List";
     }
 

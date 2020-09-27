@@ -30,7 +30,6 @@ public class PatientController {
 
     @GetMapping(value = "allPatients")
     public String getAllPatient(Model model) {
-
         List<Patient> allPatients = this.patientService.getAll();
         model.addAttribute("patients", allPatients);
         return "PatientList";
@@ -44,46 +43,36 @@ public class PatientController {
         return "PatientForm";
     }
 
+    @GetMapping(value = "patient/edit")
+    public String editPatient(@RequestParam("id") String id, Model model) {
+        Patient patient = patientService.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("patient", patient);
+                List<Doctor> doctors = doctorService.getAll();
+                model.addAttribute("doctors", doctors);
+        return "PatientForm";
+    }
+
     @GetMapping(value = "patient/{id}")
     public String showPatientDetails (@PathVariable("id") Long id, Model model) {
         model.addAttribute("patient", patientService.getOne(id).orElse(null));
         return "PatientDetails";
     }
 
-    /*
-    @GetMapping(value = "onePatient")
-    public ResponseEntity getOnePatient(@RequestParam Long id) {
-
-        Optional<Patient> patient = patientService.getOne(id);
-        if (patient == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(patient, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("patient/delete")
-    public String deletePatient(@RequestParam("id") String id) {
+    public String deletePatient(@RequestParam("id") String id, Model model) {
         patientService.delete(Long.parseLong(id));
+        List<Patient> allPatients = this.patientService.getAll();
+        model.addAttribute("patients", allPatients);
         return "PatientList";
     }
 
-    @PostMapping(value = "updatePatient")
-    public ResponseEntity updatePatient(@RequestBody Patient patient) {
-
-        if (patient == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        patientService.update(patient);
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "addPatient")
-    public String addPatient(@ModelAttribute Patient patient) {
-
+    public String addPatient(@ModelAttribute Patient patient, Model model) {
         patientService.add(patient);
+        List<Patient> allPatients = this.patientService.getAll();
+        model.addAttribute("patients", allPatients);
         return "PatientList";
     }
 

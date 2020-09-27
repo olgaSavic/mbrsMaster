@@ -43,8 +43,8 @@
                      <a class="nav-link" href="${report_all}">Report</a>
                   </li>
                   <li class="nav-item">
-                  	 <c:url var="reportItem_all" value="/allReportItems" />
-                     <a class="nav-link" href="${reportItem_all}">ReportItem</a>
+                  	 <c:url var="item_all" value="/allItems" />
+                     <a class="nav-link" href="${item_all}">Item</a>
                   </li>
                   <li class="nav-item">
                   	 <c:url var="symptom_all" value="/allSymptoms" />

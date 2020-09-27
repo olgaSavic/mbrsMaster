@@ -6,15 +6,15 @@ import uns.ftn.mbrs.model.*;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface ReportItemService {
+public interface ItemService {
 
-    List <ReportItem> getAll();
+    List <Item> getAll();
 
-    Optional < ReportItem > getOne(Long id);
+    Optional < Item > getOne(Long id);
 
-    void update(ReportItem reportitem);
+    void update(Item item);
 
-    void add(ReportItem reportitem);
+    void add(Item item);
 
     void delete(Long id);
 }

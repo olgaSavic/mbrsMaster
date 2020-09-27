@@ -3,7 +3,7 @@ package uns.ftn.mbrs.model;
 import javax.persistence.*;
 import java.util.*;
 
-import uns.ftn.mbrs.model.ReportItem;
+import uns.ftn.mbrs.model.Item;
 import uns.ftn.mbrs.model.Examination;
 
 @Entity
@@ -16,7 +16,7 @@ public class Report {
 
 
     @ManyToMany
-    private Set<ReportItem> reportItems;
+    private Set<Item> reportItems;
 
     @ManyToOne
     private Examination examination;

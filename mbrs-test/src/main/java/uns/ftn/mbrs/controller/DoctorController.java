@@ -27,7 +27,6 @@ public class DoctorController {
 
     @GetMapping(value = "allDoctors")
     public String getAllDoctor(Model model) {
-
         List<Doctor> allDoctors = this.doctorService.getAll();
         model.addAttribute("doctors", allDoctors);
         return "DoctorList";
@@ -39,46 +38,34 @@ public class DoctorController {
         return "DoctorForm";
     }
 
+    @GetMapping(value = "doctor/edit")
+    public String editDoctor(@RequestParam("id") String id, Model model) {
+        Doctor doctor = doctorService.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("doctor", doctor);
+        return "DoctorForm";
+    }
+
     @GetMapping(value = "doctor/{id}")
     public String showDoctorDetails (@PathVariable("id") Long id, Model model) {
         model.addAttribute("doctor", doctorService.getOne(id).orElse(null));
         return "DoctorDetails";
     }
 
-    /*
-    @GetMapping(value = "oneDoctor")
-    public ResponseEntity getOneDoctor(@RequestParam Long id) {
-
-        Optional<Doctor> doctor = doctorService.getOne(id);
-        if (doctor == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(doctor, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("doctor/delete")
-    public String deleteDoctor(@RequestParam("id") String id) {
+    public String deleteDoctor(@RequestParam("id") String id, Model model) {
         doctorService.delete(Long.parseLong(id));
+        List<Doctor> allDoctors = this.doctorService.getAll();
+        model.addAttribute("doctors", allDoctors);
         return "DoctorList";
     }
 
-    @PostMapping(value = "updateDoctor")
-    public ResponseEntity updateDoctor(@RequestBody Doctor doctor) {
-
-        if (doctor == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        doctorService.update(doctor);
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "addDoctor")
-    public String addDoctor(@ModelAttribute Doctor doctor) {
-
+    public String addDoctor(@ModelAttribute Doctor doctor, Model model) {
         doctorService.add(doctor);
+        List<Doctor> allDoctors = this.doctorService.getAll();
+        model.addAttribute("doctors", allDoctors);
         return "DoctorList";
     }
 

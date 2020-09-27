@@ -33,7 +33,6 @@ public class ExaminationController {
 
     @GetMapping(value = "allExaminations")
     public String getAllExamination(Model model) {
-
         List<Examination> allExaminations = this.examinationService.getAll();
         model.addAttribute("examinations", allExaminations);
         return "ExaminationList";
@@ -49,46 +48,38 @@ public class ExaminationController {
         return "ExaminationForm";
     }
 
+    @GetMapping(value = "examination/edit")
+    public String editExamination(@RequestParam("id") String id, Model model) {
+        Examination examination = examinationService.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("examination", examination);
+                List<Doctor> doctors = doctorService.getAll();
+                model.addAttribute("doctors", doctors);
+                List<Patient> patients = patientService.getAll();
+                model.addAttribute("patients", patients);
+        return "ExaminationForm";
+    }
+
     @GetMapping(value = "examination/{id}")
     public String showExaminationDetails (@PathVariable("id") Long id, Model model) {
         model.addAttribute("examination", examinationService.getOne(id).orElse(null));
         return "ExaminationDetails";
     }
 
-    /*
-    @GetMapping(value = "oneExamination")
-    public ResponseEntity getOneExamination(@RequestParam Long id) {
-
-        Optional<Examination> examination = examinationService.getOne(id);
-        if (examination == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(examination, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("examination/delete")
-    public String deleteExamination(@RequestParam("id") String id) {
+    public String deleteExamination(@RequestParam("id") String id, Model model) {
         examinationService.delete(Long.parseLong(id));
+        List<Examination> allExaminations = this.examinationService.getAll();
+        model.addAttribute("examinations", allExaminations);
         return "ExaminationList";
     }
 
-    @PostMapping(value = "updateExamination")
-    public ResponseEntity updateExamination(@RequestBody Examination examination) {
-
-        if (examination == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        examinationService.update(examination);
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "addExamination")
-    public String addExamination(@ModelAttribute Examination examination) {
-
+    public String addExamination(@ModelAttribute Examination examination, Model model) {
         examinationService.add(examination);
+        List<Examination> allExaminations = this.examinationService.getAll();
+        model.addAttribute("examinations", allExaminations);
         return "ExaminationList";
     }
 

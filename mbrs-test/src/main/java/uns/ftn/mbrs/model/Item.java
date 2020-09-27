@@ -7,7 +7,7 @@ import uns.ftn.mbrs.model.Report;
 
 @Entity
 @Table
-public class ReportItem {
+public class Item {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

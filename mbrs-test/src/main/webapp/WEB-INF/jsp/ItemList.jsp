@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>List of reportItems</title>
+        <title>List of items</title>
     </head>
     <body>
         <%@ include file="navigation.jsp"%>
@@ -18,9 +18,9 @@
 	        } );
         </script>
         <div class="container">
-            <h5 class="text-center">List of reportItems</h5>
+            <h5 class="text-center">List of items</h5>
             <div>
-                 <a class="btn btn-outline-primary btn-sm float-right mb-3" href="<c:url value="/reportItem/new"/>">Add new reportItem</a>
+                 <a class="btn btn-outline-primary btn-sm float-right mb-3" href="<c:url value="/item/new"/>">Add new item</a>
             </div>
             <div>
                  <table id="table_id" class="table table-sm table-hover table-bordered text-center mt-3">
@@ -33,15 +33,15 @@
                     	</tr>
                     </thead>
                     <tbody>
-                    	<c:forEach items="${reportItems}" var="reportItem">
+                    	<c:forEach items="${items}" var="item">
                     	<tr>
-                            <td> ${reportItem.id}</td>
-                            <td> ${reportItem.name}</td>
-                            <td> ${reportItem.description}</td>
+                            <td> ${item.id}</td>
+                            <td> ${item.name}</td>
+                            <td> ${item.description}</td>
                         	<td>
-                            	<a class="btn btn-sm btn-info" href="<c:url value="/reportItem/${reportItem.id}"/>">Detail</a>
-                            	<a class="btn btn-sm btn-primary" href="<c:url value="/reportItem/edit?id=${reportItem.id}"/>">Edit</a>
-                            	<a class="btn btn-sm btn-danger" href="<c:url value="/reportItem/delete?id=${reportItem.id}"/>">Delete</a>
+                            	<a class="btn btn-sm btn-info" href="<c:url value="/item/${item.id}"/>">Detail</a>
+                            	<a class="btn btn-sm btn-primary" href="<c:url value="/item/edit?id=${item.id}"/>">Edit</a>
+                            	<a class="btn btn-sm btn-danger" href="<c:url value="/item/delete?id=${item.id}"/>">Delete</a>
                         	</td>
                     	</tr>
                     	</c:forEach>

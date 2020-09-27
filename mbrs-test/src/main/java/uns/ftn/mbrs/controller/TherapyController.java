@@ -27,7 +27,6 @@ public class TherapyController {
 
     @GetMapping(value = "allTherapys")
     public String getAllTherapy(Model model) {
-
         List<Therapy> allTherapys = this.therapyService.getAll();
         model.addAttribute("therapys", allTherapys);
         return "TherapyList";
@@ -39,46 +38,34 @@ public class TherapyController {
         return "TherapyForm";
     }
 
+    @GetMapping(value = "therapy/edit")
+    public String editTherapy(@RequestParam("id") String id, Model model) {
+        Therapy therapy = therapyService.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("therapy", therapy);
+        return "TherapyForm";
+    }
+
     @GetMapping(value = "therapy/{id}")
     public String showTherapyDetails (@PathVariable("id") Long id, Model model) {
         model.addAttribute("therapy", therapyService.getOne(id).orElse(null));
         return "TherapyDetails";
     }
 
-    /*
-    @GetMapping(value = "oneTherapy")
-    public ResponseEntity getOneTherapy(@RequestParam Long id) {
-
-        Optional<Therapy> therapy = therapyService.getOne(id);
-        if (therapy == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(therapy, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("therapy/delete")
-    public String deleteTherapy(@RequestParam("id") String id) {
+    public String deleteTherapy(@RequestParam("id") String id, Model model) {
         therapyService.delete(Long.parseLong(id));
+        List<Therapy> allTherapys = this.therapyService.getAll();
+        model.addAttribute("therapys", allTherapys);
         return "TherapyList";
     }
 
-    @PostMapping(value = "updateTherapy")
-    public ResponseEntity updateTherapy(@RequestBody Therapy therapy) {
-
-        if (therapy == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        therapyService.update(therapy);
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "addTherapy")
-    public String addTherapy(@ModelAttribute Therapy therapy) {
-
+    public String addTherapy(@ModelAttribute Therapy therapy, Model model) {
         therapyService.add(therapy);
+        List<Therapy> allTherapys = this.therapyService.getAll();
+        model.addAttribute("therapys", allTherapys);
         return "TherapyList";
     }
 

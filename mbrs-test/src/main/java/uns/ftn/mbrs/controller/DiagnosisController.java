@@ -33,7 +33,6 @@ public class DiagnosisController {
 
     @GetMapping(value = "allDiagnosiss")
     public String getAllDiagnosis(Model model) {
-
         List<Diagnosis> allDiagnosiss = this.diagnosisService.getAll();
         model.addAttribute("diagnosiss", allDiagnosiss);
         return "DiagnosisList";
@@ -49,46 +48,38 @@ public class DiagnosisController {
         return "DiagnosisForm";
     }
 
+    @GetMapping(value = "diagnosis/edit")
+    public String editDiagnosis(@RequestParam("id") String id, Model model) {
+        Diagnosis diagnosis = diagnosisService.getOne(Long.parseLong(id)).orElse(null);
+        model.addAttribute("diagnosis", diagnosis);
+                List<Patient> patients = patientService.getAll();
+                model.addAttribute("patients", patients);
+                List<Doctor> doctors = doctorService.getAll();
+                model.addAttribute("doctors", doctors);
+        return "DiagnosisForm";
+    }
+
     @GetMapping(value = "diagnosis/{id}")
     public String showDiagnosisDetails (@PathVariable("id") Long id, Model model) {
         model.addAttribute("diagnosis", diagnosisService.getOne(id).orElse(null));
         return "DiagnosisDetails";
     }
 
-    /*
-    @GetMapping(value = "oneDiagnosis")
-    public ResponseEntity getOneDiagnosis(@RequestParam Long id) {
-
-        Optional<Diagnosis> diagnosis = diagnosisService.getOne(id);
-        if (diagnosis == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return new ResponseEntity(diagnosis, HttpStatus.OK);
-    }
-    */
-
 
     @GetMapping("diagnosis/delete")
-    public String deleteDiagnosis(@RequestParam("id") String id) {
+    public String deleteDiagnosis(@RequestParam("id") String id, Model model) {
         diagnosisService.delete(Long.parseLong(id));
+        List<Diagnosis> allDiagnosiss = this.diagnosisService.getAll();
+        model.addAttribute("diagnosiss", allDiagnosiss);
         return "DiagnosisList";
     }
 
-    @PostMapping(value = "updateDiagnosis")
-    public ResponseEntity updateDiagnosis(@RequestBody Diagnosis diagnosis) {
-
-        if (diagnosis == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        diagnosisService.update(diagnosis);
-        return ResponseEntity.ok().build();
-    }
 
     @PostMapping(value = "addDiagnosis")
-    public String addDiagnosis(@ModelAttribute Diagnosis diagnosis) {
-
+    public String addDiagnosis(@ModelAttribute Diagnosis diagnosis, Model model) {
         diagnosisService.add(diagnosis);
+        List<Diagnosis> allDiagnosiss = this.diagnosisService.getAll();
+        model.addAttribute("diagnosiss", allDiagnosiss);
         return "DiagnosisList";
     }
 

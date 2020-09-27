@@ -10,25 +10,25 @@
     <%@ include file="navigation.jsp"%>
     <div class="container">
         <div class="text-center mt-2">
-            <h5>ReportItem details</h5>
+            <h5>Item details</h5>
             <div>
                  <div>
                         <div class="m-2">
-                            <span>Id: <span class="font-weight-bold">${reportItem.id}</span></span>
+                            <span>Id: <span class="font-weight-bold">${item.id}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Name: <span class="font-weight-bold">${reportItem.name}</span></span>
+                            <span>Name: <span class="font-weight-bold">${item.name}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Description: <span class="font-weight-bold">${reportItem.description}</span></span>
+                            <span>Description: <span class="font-weight-bold">${item.description}</span></span>
                         </div>
                         <hr class="my-2">
                  </div>
             </div>
-            <a  href="<c:url value="/reportItem/edit?id=${reportItem.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
-            <a  href="<c:url value="/reportItem/delete?id=${reportItem.id}"/>" class="btn btn-sm btn-outline-danger mt-4">Delete</a>
+            <a  href="<c:url value="/item/edit?id=${item.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
+            <a  href="<c:url value="/item/delete?id=${item.id}"/>" class="btn btn-sm btn-outline-danger mt-4">Delete</a>
          </div>
     </div>
 </body>
