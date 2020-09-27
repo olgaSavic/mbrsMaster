@@ -38,7 +38,7 @@ public class Patient {
     @ManyToMany
     private Set<Symptom> symptoms;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
     private Set<Examination> examination;
 
     @OneToMany

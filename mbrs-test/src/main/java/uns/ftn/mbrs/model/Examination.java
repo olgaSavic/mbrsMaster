@@ -25,7 +25,7 @@ public class Examination {
     @ManyToOne
     private Patient patient;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "examination")
     private Set<Report> report;
 
     public Long getId(){

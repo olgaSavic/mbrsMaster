@@ -40,7 +40,7 @@ class GenerateAction extends MDAction {
 			generateController(root);
 			generateService(root);
 			generateServiceImpl(root);
-			generateMain(root);
+			//generateMain(root);
 
 			JOptionPane.showMessageDialog(null, "Code is successfully generated! Generated code is in folder: c:/mbrs" );
 			exportToXml();
