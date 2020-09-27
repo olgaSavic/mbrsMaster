@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="" />
+    <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../mbrs-test/src/main/resources/data.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +54,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mbrs-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/uml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -61,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\Master\Metodologija brzog razvoja softvera\MBRS Git\mbrsMaster\PluginDevelopment\resources\uml" />
       <recent name="C:\Users\Dell\Desktop\Master\Metodologija brzog razvoja softvera\MBRS Git\mbrsMaster\PluginDevelopment\resources\templates" />
       <recent name="F:\FTN\MASTER\MBRS\MBRS GIT\mbrsMaster\PluginDevelopment\resources\templates\frontend" />
       <recent name="F:\FTN\MASTER\MBRS\MBRS GIT\mbrsMaster\PluginDevelopment\resources\templates" />
@@ -109,7 +113,7 @@
       <workItem from="1601060002604" duration="5028000" />
       <workItem from="1601067595338" duration="9140000" />
       <workItem from="1601150220991" duration="12639000" />
-      <workItem from="1601200459475" duration="15711000" />
+      <workItem from="1601200459475" duration="16700000" />
     </task>
     <task id="LOCAL-00001" summary="izmene">
       <created>1601045325345</created>
@@ -146,6 +150,10 @@
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600867623526" />
     <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1601046456919" />
+    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601232918416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601232918416" />
     <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1601045324032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
