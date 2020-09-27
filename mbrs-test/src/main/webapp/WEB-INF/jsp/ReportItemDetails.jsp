@@ -22,7 +22,7 @@
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Descriptioin: <span class="font-weight-bold">${reportItem.descriptioin}</span></span>
+                            <span>Description: <span class="font-weight-bold">${reportItem.description}</span></span>
                         </div>
                         <hr class="my-2">
                  </div>

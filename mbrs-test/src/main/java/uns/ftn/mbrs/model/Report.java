@@ -18,7 +18,7 @@ public class Report {
     @ManyToMany
     private Set<ReportItem> reportItems;
 
-    @OneToOne
+    @ManyToOne
     private Examination examination;
 
     public Long getId(){

@@ -17,7 +17,7 @@ public class ReportItem {
     private String name;
 
     @Column
-    private String descriptioin;
+    private String description;
 
 
     @ManyToMany
@@ -38,12 +38,12 @@ public class ReportItem {
          this.name = name;
     }
 
-    public String getDescriptioin(){
-    return descriptioin;
+    public String getDescription(){
+    return description;
     }
 
-       public void setDescriptioin(String descriptioin){
-         this.descriptioin = descriptioin;
+       public void setDescription(String description){
+         this.description = description;
     }
 
 

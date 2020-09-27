@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.*;
 
 import uns.ftn.mbrs.model.Doctor;
-import uns.ftn.mbrs.model.Pacient;
+import uns.ftn.mbrs.model.Patient;
 import uns.ftn.mbrs.model.Report;
 
 @Entity
@@ -22,10 +22,10 @@ public class Examination {
     private Doctor doctor;
 
     @ManyToOne
-    private Pacient pacient;
+    private Patient patient;
 
-    @OneToOne
-    private Report report;
+    @OneToMany
+    private Set<Report> report;
 
     public Long getId(){
          return id;

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.*;
 
 import uns.ftn.mbrs.model.Diagnosis;
-import uns.ftn.mbrs.model.Pacient;
+import uns.ftn.mbrs.model.Patient;
 
 @Entity
 @Table
@@ -22,7 +22,7 @@ public class Therapy {
     private Set<Diagnosis> diagnosiss;
 
     @ManyToMany
-    private Set<Pacient> patients;
+    private Set<Patient> patients;
 
     public Long getId(){
          return id;

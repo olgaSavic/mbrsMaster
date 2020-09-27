@@ -28,7 +28,7 @@
                     	<tr>
                         	<th>Id</th>
                         	<th>Name</th>
-                        	<th>Descriptioin</th>
+                        	<th>Description</th>
                         	<th>Action</th>
                     	</tr>
                     </thead>
@@ -37,7 +37,7 @@
                     	<tr>
                             <td> ${reportItem.id}</td>
                             <td> ${reportItem.name}</td>
-                            <td> ${reportItem.descriptioin}</td>
+                            <td> ${reportItem.description}</td>
                         	<td>
                             	<a class="btn btn-sm btn-info" href="<c:url value="/reportItem/${reportItem.id}"/>">Detail</a>
                             	<a class="btn btn-sm btn-primary" href="<c:url value="/reportItem/edit?id=${reportItem.id}"/>">Edit</a>

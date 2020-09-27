@@ -10,37 +10,37 @@
     <%@ include file="navigation.jsp"%>
     <div class="container">
         <div class="text-center mt-2">
-            <h5>Pacient details</h5>
+            <h5>Patient details</h5>
             <div>
                  <div>
                         <div class="m-2">
-                            <span>Id: <span class="font-weight-bold">${pacient.id}</span></span>
+                            <span>Id: <span class="font-weight-bold">${patient.id}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Name: <span class="font-weight-bold">${pacient.name}</span></span>
+                            <span>Name: <span class="font-weight-bold">${patient.name}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Surname: <span class="font-weight-bold">${pacient.surname}</span></span>
+                            <span>Surname: <span class="font-weight-bold">${patient.surname}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Jmbg: <span class="font-weight-bold">${pacient.jmbg}</span></span>
+                            <span>Jmbg: <span class="font-weight-bold">${patient.jmbg}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>Address: <span class="font-weight-bold">${pacient.address}</span></span>
+                            <span>Address: <span class="font-weight-bold">${patient.address}</span></span>
                         </div>
                         <hr class="my-2">
                         <div class="m-2">
-                            <span>PhoneNumber: <span class="font-weight-bold">${pacient.phoneNumber}</span></span>
+                            <span>PhoneNumber: <span class="font-weight-bold">${patient.phoneNumber}</span></span>
                         </div>
                         <hr class="my-2">
                  </div>
             </div>
-            <a  href="<c:url value="/pacient/edit?id=${pacient.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
-            <a  href="<c:url value="/pacient/delete?id=${pacient.id}"/>" class="btn btn-sm btn-outline-danger mt-4">Delete</a>
+            <a  href="<c:url value="/patient/edit?id=${patient.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
+            <a  href="<c:url value="/patient/delete?id=${patient.id}"/>" class="btn btn-sm btn-outline-danger mt-4">Delete</a>
          </div>
     </div>
 </body>

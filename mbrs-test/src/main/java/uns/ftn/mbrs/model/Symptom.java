@@ -3,7 +3,7 @@ package uns.ftn.mbrs.model;
 import javax.persistence.*;
 import java.util.*;
 
-import uns.ftn.mbrs.model.Pacient;
+import uns.ftn.mbrs.model.Patient;
 
 @Entity
 @Table
@@ -20,8 +20,8 @@ public class Symptom {
     private String description;
 
 
-    @OneToMany
-    private Set<Pacient> patients;
+    @ManyToMany
+    private Set<Patient> patients;
 
     public Long getId(){
          return id;

@@ -3,7 +3,7 @@ package uns.ftn.mbrs.model;
 import javax.persistence.*;
 import java.util.*;
 
-import uns.ftn.mbrs.model.Pacient;
+import uns.ftn.mbrs.model.Patient;
 import uns.ftn.mbrs.model.Examination;
 import uns.ftn.mbrs.model.Diagnosis;
 
@@ -19,7 +19,8 @@ public class Doctor {
     private String surname;
 
     @Column
-    private Long jmbg;
+    private String jmbg;
+
     @Column
     private String phoneNumber;
 
@@ -30,8 +31,8 @@ public class Doctor {
     private String specialty;
 
 
-    @OneToOne
-    private Pacient pacient;
+    @OneToMany
+    private Set<Patient> patient;
 
     @OneToMany
     private Set<Examination> examinations;
@@ -54,10 +55,11 @@ public class Doctor {
          this.surname = surname;
     }
 
-    public Long getJmbg(){
-         return jmbg;
+    public String getJmbg(){
+    return jmbg;
     }
-    public void setJmbg(Long jmbg){
+
+       public void setJmbg(String jmbg){
          this.jmbg = jmbg;
     }
 

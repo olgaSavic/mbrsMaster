@@ -3,7 +3,7 @@ package uns.ftn.mbrs.model;
 import javax.persistence.*;
 import java.util.*;
 
-import uns.ftn.mbrs.model.Pacient;
+import uns.ftn.mbrs.model.Patient;
 import uns.ftn.mbrs.model.Doctor;
 import uns.ftn.mbrs.model.Therapy;
 
@@ -22,8 +22,8 @@ public class Diagnosis {
     private String description;
 
 
-    @OneToOne
-    private Pacient pacient;
+    @ManyToOne
+    private Patient pacient;
 
     @ManyToOne
     private Doctor doctor;

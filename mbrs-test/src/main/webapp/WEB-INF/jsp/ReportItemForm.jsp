@@ -25,8 +25,8 @@
                         <form:input cssClass="form-control" path="name" />
                     </div>
                     <div class="form-group">
-                        <form:label path="descriptioin">Descriptioin</form:label>
-                        <form:input cssClass="form-control" path="descriptioin" />
+                        <form:label path="description">Description</form:label>
+                        <form:input cssClass="form-control" path="description" />
                     </div>
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add reportItem</button>

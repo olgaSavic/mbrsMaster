@@ -35,8 +35,8 @@
                      <a class="nav-link" href="${examination_all}">Examination</a>
                   </li>
                   <li class="nav-item">
-                  	 <c:url var="pacient_all" value="/allPacients" />
-                     <a class="nav-link" href="${pacient_all}">Pacient</a>
+                  	 <c:url var="patient_all" value="/allPatients" />
+                     <a class="nav-link" href="${patient_all}">Patient</a>
                   </li>
                   <li class="nav-item">
                   	 <c:url var="report_all" value="/allReports" />

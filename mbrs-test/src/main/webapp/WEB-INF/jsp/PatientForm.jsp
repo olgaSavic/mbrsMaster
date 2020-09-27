@@ -5,17 +5,17 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>New Pacient form</title>
+<title>New Patient form</title>
 </head>
 <body>
     <%@ include file="navigation.jsp"%>
-    <c:url var="action" value="/addPacient" />
+    <c:url var="action" value="/addPatient" />
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 border p-4">
-                <h5 class="text-center">New Pacient form</h5>
-                <form:form class="p-2" action="${action}" method="post" modelAttribute="pacient">
+                <h5 class="text-center">New Patient form</h5>
+                <form:form class="p-2" action="${action}" method="post" modelAttribute="patient">
                     <div class="form-group">
                         <form:label path="id">Id</form:label>
                         <form:input cssClass="form-control" path="id" />
@@ -41,7 +41,7 @@
                         <form:input cssClass="form-control" path="phoneNumber" />
                     </div>
                     <div>
-                         <button class="btn btn-success float-right" type="submit">Add pacient</button>
+                         <button class="btn btn-success float-right" type="submit">Add patient</button>
                     </div>      
                  </form:form>
             </div>

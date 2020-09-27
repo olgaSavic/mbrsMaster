@@ -6,15 +6,15 @@ import uns.ftn.mbrs.model.*;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface PacientService {
+public interface PatientService {
 
-    List <Pacient> getAll();
+    List <Patient> getAll();
 
-    Optional < Pacient > getOne(Long id);
+    Optional < Patient > getOne(Long id);
 
-    void update(Pacient pacient);
+    void update(Patient patient);
 
-    void add(Pacient pacient);
+    void add(Patient patient);
 
     void delete(Long id);
 }

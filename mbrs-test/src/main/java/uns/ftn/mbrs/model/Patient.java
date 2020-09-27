@@ -11,7 +11,7 @@ import uns.ftn.mbrs.model.Therapy;
 
 @Entity
 @Table
-public class Pacient {
+public class Patient {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -32,17 +32,17 @@ public class Pacient {
     private String phoneNumber;
 
 
-    @OneToOne
+    @ManyToOne
     private Doctor doctor;
 
-    @ManyToOne
-    private Symptom symptoms;
+    @ManyToMany
+    private Set<Symptom> symptoms;
 
     @OneToMany
     private Set<Examination> examination;
 
-    @OneToOne
-    private Diagnosis diagnosis;
+    @OneToMany
+    private Set<Diagnosis> diagnosis;
 
     @ManyToMany
     private Set<Therapy> therapies;
