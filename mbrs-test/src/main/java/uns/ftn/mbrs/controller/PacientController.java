@@ -72,29 +72,14 @@ public class PacientController {
         pacientService.update(pacient);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addPacient")
-    public String addPacient(@RequestBody Pacient pacient) {
+    public String addPacient(@ModelAttribute Pacient pacient) {
 
-        Pacient Pacient = Pacient.builder()
-                .id(Pacient.getId())
-
-                .name(Pacient.getName())
-
-                .surname(Pacient.getSurname())
-
-                .jmbg(Pacient.getJmbg())
-
-                .address(Pacient.getAddress())
-
-                .phoneNumber(Pacient.getPhoneNumber())
-
-        .build();
-
-        pacientService.add(Pacient);
+        pacientService.add(pacient);
         return "PacientList";
     }
-    */
+
 
 
 

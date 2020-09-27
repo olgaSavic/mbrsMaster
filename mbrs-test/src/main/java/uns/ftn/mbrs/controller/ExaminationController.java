@@ -72,21 +72,14 @@ public class ExaminationController {
         examinationService.update(examination);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addExamination")
-    public String addExamination(@RequestBody Examination examination) {
+    public String addExamination(@ModelAttribute Examination examination) {
 
-        Examination Examination = Examination.builder()
-                .id(Examination.getId())
-
-                .date(Examination.getDate())
-
-        .build();
-
-        examinationService.add(Examination);
+        examinationService.add(examination);
         return "ExaminationList";
     }
-    */
+
 
 
 

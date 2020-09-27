@@ -72,23 +72,14 @@ public class DiagnosisController {
         diagnosisService.update(diagnosis);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addDiagnosis")
-    public String addDiagnosis(@RequestBody Diagnosis diagnosis) {
+    public String addDiagnosis(@ModelAttribute Diagnosis diagnosis) {
 
-        Diagnosis Diagnosis = Diagnosis.builder()
-                .id(Diagnosis.getId())
-
-                .name(Diagnosis.getName())
-
-                .description(Diagnosis.getDescription())
-
-        .build();
-
-        diagnosisService.add(Diagnosis);
+        diagnosisService.add(diagnosis);
         return "DiagnosisList";
     }
-    */
+
 
 
 

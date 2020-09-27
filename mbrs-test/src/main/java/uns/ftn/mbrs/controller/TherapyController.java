@@ -72,21 +72,14 @@ public class TherapyController {
         therapyService.update(therapy);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addTherapy")
-    public String addTherapy(@RequestBody Therapy therapy) {
+    public String addTherapy(@ModelAttribute Therapy therapy) {
 
-        Therapy Therapy = Therapy.builder()
-                .id(Therapy.getId())
-
-                .description(Therapy.getDescription())
-
-        .build();
-
-        therapyService.add(Therapy);
+        therapyService.add(therapy);
         return "TherapyList";
     }
-    */
+
 
 
 

@@ -72,29 +72,14 @@ public class DoctorController {
         doctorService.update(doctor);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addDoctor")
-    public String addDoctor(@RequestBody Doctor doctor) {
+    public String addDoctor(@ModelAttribute Doctor doctor) {
 
-        Doctor Doctor = Doctor.builder()
-                .id(Doctor.getId())
-
-                .surname(Doctor.getSurname())
-
-                .jmbg(Doctor.getJmbg())
-
-                .phoneNumber(Doctor.getPhoneNumber())
-
-                .name(Doctor.getName())
-
-                .specialty(Doctor.getSpecialty())
-
-        .build();
-
-        doctorService.add(Doctor);
+        doctorService.add(doctor);
         return "DoctorList";
     }
-    */
+
 
 
 

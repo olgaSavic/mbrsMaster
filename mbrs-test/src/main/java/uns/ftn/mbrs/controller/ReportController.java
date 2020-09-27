@@ -72,19 +72,14 @@ public class ReportController {
         reportService.update(report);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addReport")
-    public String addReport(@RequestBody Report report) {
+    public String addReport(@ModelAttribute Report report) {
 
-        Report Report = Report.builder()
-                .id(Report.getId())
-
-        .build();
-
-        reportService.add(Report);
+        reportService.add(report);
         return "ReportList";
     }
-    */
+
 
 
 

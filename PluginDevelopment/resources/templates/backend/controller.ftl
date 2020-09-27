@@ -72,21 +72,14 @@ public class ${class.name?cap_first}Controller {
         ${class.name?lower_case}Service.update(${class.name?lower_case});
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "add${class.name}")
-    public String add${class.name}(@RequestBody ${class.name?cap_first} ${class.name?lower_case}) {
+    public String add${class.name}(@ModelAttribute ${class.name?cap_first} ${class.name?lower_case}) {
 
-        ${class.name?cap_first} ${class.name} = ${class.name?cap_first}.builder()
-        <#list properties as property>
-                .${property.name}(${class.name}.get${property.name?cap_first}())
-
-        </#list>
-        .build();
-
-        ${class.name?lower_case}Service.add(${class.name});
+        ${class.name?lower_case}Service.add(${class.name?lower_case});
         return "${class.name?cap_first}List";
     }
-    */
+
 
 
 

@@ -72,23 +72,14 @@ public class SymptomController {
         symptomService.update(symptom);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addSymptom")
-    public String addSymptom(@RequestBody Symptom symptom) {
+    public String addSymptom(@ModelAttribute Symptom symptom) {
 
-        Symptom Symptom = Symptom.builder()
-                .id(Symptom.getId())
-
-                .name(Symptom.getName())
-
-                .description(Symptom.getDescription())
-
-        .build();
-
-        symptomService.add(Symptom);
+        symptomService.add(symptom);
         return "SymptomList";
     }
-    */
+
 
 
 

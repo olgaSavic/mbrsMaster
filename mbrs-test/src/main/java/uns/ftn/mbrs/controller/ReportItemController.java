@@ -72,23 +72,14 @@ public class ReportItemController {
         reportitemService.update(reportitem);
         return ResponseEntity.ok().build();
     }
-    /*
+
     @PostMapping(value = "addReportItem")
-    public String addReportItem(@RequestBody ReportItem reportitem) {
+    public String addReportItem(@ModelAttribute ReportItem reportitem) {
 
-        ReportItem ReportItem = ReportItem.builder()
-                .id(ReportItem.getId())
-
-                .name(ReportItem.getName())
-
-                .descriptioin(ReportItem.getDescriptioin())
-
-        .build();
-
-        reportitemService.add(ReportItem);
+        reportitemService.add(reportitem);
         return "ReportItemList";
     }
-    */
+
 
 
 
