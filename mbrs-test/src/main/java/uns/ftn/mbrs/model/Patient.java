@@ -94,4 +94,11 @@ public class Patient {
     }
 
 
+    public Doctor getDoctor(){
+        return doctor;
+    }
+    public void setDoctor(Doctor doctor){
+        this.doctor = doctor;
+    }
+
 }

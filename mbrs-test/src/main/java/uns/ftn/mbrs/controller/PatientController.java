@@ -5,6 +5,8 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.PatientService;
+import uns.ftn.mbrs.service.DoctorService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,9 @@ public class PatientController {
     @Autowired
     private PatientService patientService;
 
+    @Autowired
+    private DoctorService doctorService;
+
     @GetMapping(value = "allPatients")
     public String getAllPatient(Model model) {
 
@@ -34,6 +39,8 @@ public class PatientController {
     @GetMapping(value = "patient/new")
     public String newPatient(Model model) {
         model.addAttribute("patient", new Patient());
+        List<Doctor> doctors = doctorService.getAll();
+        model.addAttribute("doctors", doctors);
         return "PatientForm";
     }
 

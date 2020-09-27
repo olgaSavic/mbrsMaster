@@ -5,6 +5,7 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.ReportItemService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,7 @@ public class ReportItemController {
 
     @Autowired
     private ReportItemService reportitemService;
+
 
     @GetMapping(value = "allReportItems")
     public String getAllReportItem(Model model) {

@@ -24,6 +24,9 @@
                         <form:label path="description">Description</form:label>
                         <form:input cssClass="form-control" path="description" />
                     </div>
+
+
+
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add therapy</button>
                     </div>      

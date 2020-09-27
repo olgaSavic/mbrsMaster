@@ -24,6 +24,26 @@
                         <form:label path="date">Date</form:label>
                         <form:input cssClass="form-control" path="date" />
                     </div>
+
+
+                            <div class="form-group">
+                                <form:label path="doctor">Doctor</form:label>
+                                <form:select path="doctor" cssClass="form-control">
+                                    <option value="-1">Select a doctor</option>
+                                    <form:options items="${doctors}" itemValue="id"/>
+                                </form:select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <form:label path="patient">Patient</form:label>
+                                <form:select path="patient" cssClass="form-control">
+                                    <option value="-1">Select a patient</option>
+                                    <form:options items="${patients}" itemValue="id"/>
+                                </form:select>
+                            </div>
+
+
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add examination</button>
                     </div>      

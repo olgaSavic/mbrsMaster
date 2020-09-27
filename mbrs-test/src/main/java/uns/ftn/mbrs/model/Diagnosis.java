@@ -23,7 +23,7 @@ public class Diagnosis {
 
 
     @ManyToOne
-    private Patient pacient;
+    private Patient patient;
 
     @ManyToOne
     private Doctor doctor;
@@ -54,5 +54,18 @@ public class Diagnosis {
          this.description = description;
     }
 
+
+    public Patient getPatient(){
+        return patient;
+    }
+    public void setPatient(Patient patient){
+        this.patient = patient;
+    }
+    public Doctor getDoctor(){
+        return doctor;
+    }
+    public void setDoctor(Doctor doctor){
+        this.doctor = doctor;
+    }
 
 }

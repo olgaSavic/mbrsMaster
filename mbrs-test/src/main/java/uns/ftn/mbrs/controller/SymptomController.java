@@ -5,6 +5,7 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.SymptomService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,7 @@ public class SymptomController {
 
     @Autowired
     private SymptomService symptomService;
+
 
     @GetMapping(value = "allSymptoms")
     public String getAllSymptom(Model model) {

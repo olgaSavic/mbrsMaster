@@ -40,6 +40,20 @@
                         <form:label path="phoneNumber">PhoneNumber</form:label>
                         <form:input cssClass="form-control" path="phoneNumber" />
                     </div>
+
+
+                            <div class="form-group">
+                                <form:label path="doctor">Doctor</form:label>
+                                <form:select path="doctor" cssClass="form-control">
+                                    <option value="-1">Select a doctor</option>
+                                    <form:options items="${doctors}" itemValue="id"/>
+                                </form:select>
+                            </div>
+
+
+
+
+
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add patient</button>
                     </div>      

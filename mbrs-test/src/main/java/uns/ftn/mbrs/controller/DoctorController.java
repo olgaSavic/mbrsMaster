@@ -5,6 +5,7 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.DoctorService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,7 @@ public class DoctorController {
 
     @Autowired
     private DoctorService doctorService;
+
 
     @GetMapping(value = "allDoctors")
     public String getAllDoctor(Model model) {

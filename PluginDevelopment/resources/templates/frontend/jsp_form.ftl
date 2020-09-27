@@ -32,25 +32,6 @@
                 <form:form class="p-2" action="${opening_bracket}action${closing_bracket}" method="post" modelAttribute="${class_name}">
                 <#list properties as property>
                     <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
-<#--                    <#if entity_properties[property.type]??>-->
-<#--                    <#if property.upper == -1>-->
-<#--                    &lt;#&ndash; @ManyToMany  or @OneToMany &ndash;&gt;-->
-<#--                    <div class="form-group " <#if property.persistentAnnotationName == "@OneToMany">style="display: none;"</#if>>-->
-<#--                        ${label}-->
-<#--                        &lt;#&ndash; TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY &ndash;&gt;-->
-<#--                        <form:checkboxes items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" path="${property.name}" element="div class='checkbox border rounded p-2' " itemValue="id"/>-->
-<#--                    </div>-->
-<#--                    <#elseif property.upper == 1>-->
-<#--                    &lt;#&ndash; @ManyToOne or @OneToOne &ndash;&gt;-->
-<#--                    <div class="form-group">-->
-<#--                        ${label}-->
-<#--                        <form:select path="${property.name}" cssClass="form-control">-->
-<#--                            <option value="-1">Select a ${property.name}</option>-->
-<#--                            &lt;#&ndash; TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY &ndash;&gt;-->
-<#--                            <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>-->
-<#--                        </form:select>-->
-<#--                    </div>-->
-<#--                    </#if>-->
                     <#if enum_types?seq_contains(property.type)>
                     	${label}
                         <form:select path="${property.name}" cssClass="form-control">
@@ -70,16 +51,41 @@
                         <form:checkbox path="${property.name}" />
                         ${label}
                     </div>
-                    <#else>
+                    <#elseif property.type == "String" || property.type == "string" || property.type == "Long" || property.type == "long" || property.type == "date" || property.type == "Date">
                     <#-- text -->
                     <#-- textarea TODO -->
                     <div class="form-group">
                         ${label}
                         <form:input cssClass="form-control" path="${property.name}" />
                     </div>
-                    </#if>		            
+                    </#if>
+<#--                    <#else>-->
+<#--                        <div class="form-group">-->
+<#--                            ${label}-->
+<#--                            <form:select path="${property.name}" cssClass="form-control">-->
+<#--                                <option value="-1">Select a ${property.name}</option>-->
+<#--                                &lt;#&ndash; TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY &ndash;&gt;-->
+<#--                                <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>-->
+<#--                            </form:select>-->
+<#--                        </div>-->
                     </#if>
                 </#list>
+
+                    <#list  class.FMLinkedProperty as property>
+                        <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
+
+                        <#if property.upper == 1 && property.oppositeEnd== -1>
+                            <div class="form-group">
+                                ${label}
+                                <form:select path="${property.name}" cssClass="form-control">
+                                    <option value="-1">Select a ${property.name}</option>
+                                    <#-- TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY -->
+                                    <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>
+                                </form:select>
+                            </div>
+
+                       </#if>
+                    </#list>
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add ${class_name}</button>
                     </div>      

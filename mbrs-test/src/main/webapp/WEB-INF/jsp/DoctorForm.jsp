@@ -40,6 +40,10 @@
                         <form:label path="specialty">Specialty</form:label>
                         <form:input cssClass="form-control" path="specialty" />
                     </div>
+
+
+
+
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add doctor</button>
                     </div>      

@@ -107,4 +107,15 @@ ${class.visibility} class ${class.name} {
 </#if>
 </#list>
 
+<#list  class.FMLinkedProperty as property>
+    <#if property.upper == 1 && property.oppositeEnd== -1>
+    public ${property.type} get${property.name?cap_first}(){
+        return ${property.name};
+    }
+    public void set${property.name?cap_first}(${property.type} ${property.name}){
+        this.${property.name} = ${property.name};
+    }
+    </#if>
+</#list>
+
 }

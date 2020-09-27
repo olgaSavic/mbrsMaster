@@ -52,6 +52,15 @@ public class FrontFormGenerator extends BasicGenerator {
                 String servicePackage = replacePackageFragment(modelPackage, "model", "service");
                 String dtoPackage = replacePackageFragment(modelPackage, "model", "dto");
 
+                ArrayList<String> imports = new ArrayList<>();
+                String import_str = "";
+                for(FMProperty p : cl.getFMLinkedProperty()){
+                    import_str =  cl.getTypePackage() +"." + p.getType();
+                    if(!imports.contains(import_str) && import_str != ""){
+                        imports.add(import_str);
+                    }
+                }
+
                 //out = getWriter(uncapFirst(cl.getName()), "webapp.WEB-INF.jsp");
                 out = getWriter(cl.getName() + "Form", cl.getTypePackage());
                 if (out != null) {
@@ -94,6 +103,7 @@ public class FrontFormGenerator extends BasicGenerator {
                     context.put("properties", cl.getProperties());
                     context.put("entity_properties", entity_relations);
                     context.put("importedPackages", cl.getImportedPackages());
+                    context.put("imports", imports);
                     getTemplate().process(context, out);
                     out.flush();
                 }

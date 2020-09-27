@@ -20,6 +20,17 @@
                         <form:label path="id">Id</form:label>
                         <form:input cssClass="form-control" path="id" />
                     </div>
+
+
+
+                            <div class="form-group">
+                                <form:label path="examination">Examination</form:label>
+                                <form:select path="examination" cssClass="form-control">
+                                    <option value="-1">Select a examination</option>
+                                    <form:options items="${examinations}" itemValue="id"/>
+                                </form:select>
+                            </div>
+
                     <div>
                          <button class="btn btn-success float-right" type="submit">Add report</button>
                     </div>      

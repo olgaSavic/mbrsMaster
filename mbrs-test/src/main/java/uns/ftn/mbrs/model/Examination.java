@@ -16,7 +16,8 @@ public class Examination {
     private Long id;
 
     @Column
-    private Date date;
+    private String date;
+
 
     @ManyToOne
     private Doctor doctor;
@@ -34,12 +35,26 @@ public class Examination {
          this.id = id;
     }
 
-    public Date getDate(){
-         return date;
+    public String getDate(){
+    return date;
     }
-    public void setDate(Date date){
+
+       public void setDate(String date){
          this.date = date;
     }
 
+
+    public Doctor getDoctor(){
+        return doctor;
+    }
+    public void setDoctor(Doctor doctor){
+        this.doctor = doctor;
+    }
+    public Patient getPatient(){
+        return patient;
+    }
+    public void setPatient(Patient patient){
+        this.patient = patient;
+    }
 
 }

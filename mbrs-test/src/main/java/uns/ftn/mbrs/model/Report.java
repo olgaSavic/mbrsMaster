@@ -29,4 +29,11 @@ public class Report {
     }
 
 
+    public Examination getExamination(){
+        return examination;
+    }
+    public void setExamination(Examination examination){
+        this.examination = examination;
+    }
+
 }

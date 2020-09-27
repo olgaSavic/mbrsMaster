@@ -5,6 +5,8 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.ReportService;
+import uns.ftn.mbrs.service.ExaminationService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,9 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
 
+    @Autowired
+    private ExaminationService examinationService;
+
     @GetMapping(value = "allReports")
     public String getAllReport(Model model) {
 
@@ -34,6 +39,8 @@ public class ReportController {
     @GetMapping(value = "report/new")
     public String newReport(Model model) {
         model.addAttribute("report", new Report());
+        List<Examination> examinations = examinationService.getAll();
+        model.addAttribute("examinations", examinations);
         return "ReportForm";
     }
 

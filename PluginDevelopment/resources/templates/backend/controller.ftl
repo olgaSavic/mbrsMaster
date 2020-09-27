@@ -5,6 +5,12 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.${class.name}Service;
+<#list class.FMLinkedProperty as property>
+    <#if property.upper == 1 && property.oppositeEnd== -1>
+import uns.ftn.mbrs.service.${property.name?cap_first}Service;
+    </#if>
+</#list>
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +29,13 @@ public class ${class.name?cap_first}Controller {
     @Autowired
     private ${class.name?cap_first}Service ${class.name?lower_case}Service;
 
+<#list class.FMLinkedProperty as property>
+    <#if property.upper == 1 && property.oppositeEnd== -1>
+    @Autowired
+    private ${property.name?cap_first}Service ${property.name?lower_case}Service;
+    </#if>
+</#list>
+
     @GetMapping(value = "all${class.name}s")
     public String getAll${class.name}(Model model) {
 
@@ -34,6 +47,12 @@ public class ${class.name?cap_first}Controller {
     @GetMapping(value = "${class.name?lower_case}/new")
     public String new${class.name}(Model model) {
         model.addAttribute("${class.name?lower_case}", new ${class.name?cap_first}());
+    <#list class.FMLinkedProperty as property>
+    <#if property.upper == 1 && property.oppositeEnd== -1>
+        List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
+        model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
+    </#if>
+    </#list>
         return "${class.name?cap_first}Form";
     }
 
