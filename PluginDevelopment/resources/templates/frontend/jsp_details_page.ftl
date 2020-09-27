@@ -33,29 +33,38 @@
                  <div>
                  <#list properties as property>
                     <#if entity_properties[property.type]??>
-                        <#if property.upper == -1>
-                        <#-- Not sure about @ManyToMany -->
-                        <div class="m-2">
-                        <span>${u.plural(property.name?cap_first)}:
-                        <c:if test="${ "${" + empty_word  + class_name + "." + property.name + "}" }">[...]</c:if>  
-                        <c:forEach items="${ "${" + class_name + "." + property.name + "}" }" var="${property.name}_single">
-                        <#assign property_id = "${" + property.name + "_single.id" + "}" />
-                            <span class="font-weight-bold"><a href="<c:url value="/${property.type?uncap_first}/${property_id}"/>">${property.name?cap_first} ${property_id}</a></span>
-                        </c:forEach>
-                        </span>
-                        <hr class="my-2">
-                        </div>
-                        <#else>
-                        <#-- @ManyToOne or @OneToOne -->
-                        <@print_complex_property prop = property />
-                        </#if>
-                        <#else>
+<#--                        <#if property.upper == -1>-->
+<#--                        <div class="m-2">-->
+<#--                        <span>${u.plural(property.name?cap_first)}:-->
+<#--                        <c:if test="${ "${" + empty_word  + class_name + "." + property.name + "}" }">[...]</c:if>  -->
+<#--                        <c:forEach items="${ "${" + class_name + "." + property.name + "}" }" var="${property.name}_single">-->
+<#--                        <#assign property_id = "${" + property.name + "_single.id" + "}" />-->
+<#--                            <span class="font-weight-bold"><a href="<c:url value="/${property.type?uncap_first}/${property_id}"/>">${property.name?cap_first} ${property_id}</a></span>-->
+<#--                        </c:forEach>-->
+<#--                        </span>-->
+<#--                        <hr class="my-2">-->
+<#--                        </div>-->
+<#--                        <#else>-->
+<#--                        <@print_complex_property prop = property />-->
+<#--                        </#if>-->
+<#--                        <#else>-->
                         <div class="m-2">
                             <span>${property.name?cap_first}: <span class="font-weight-bold">${opening_bracket}${class_name}.${property.name}${closing_bracket}</span></span>
                         </div>
                         <hr class="my-2">			            
                     </#if>
                  </#list>
+                     <#list  class.FMLinkedProperty as property>
+                         <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
+
+                         <#if property.upper == 1 && property.oppositeEnd== -1>
+                             <div class="m-2">
+                                 <span>${property.name?cap_first}: <span class="font-weight-bold">${opening_bracket}${class_name}.${property.name}.id${closing_bracket}</span></span>
+                             </div>
+                             <hr class="my-2">
+
+                         </#if>
+                     </#list>
                  </div>
             </div>
             <a  href="<c:url value="/${class_name}/edit?id=${class_name_id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>

@@ -16,15 +16,16 @@
                         <div class="m-2">
                             <span>Id: <span class="font-weight-bold">${reportItem.id}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Name: <span class="font-weight-bold">${reportItem.name}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Description: <span class="font-weight-bold">${reportItem.description}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
+
                  </div>
             </div>
             <a  href="<c:url value="/reportItem/edit?id=${reportItem.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>

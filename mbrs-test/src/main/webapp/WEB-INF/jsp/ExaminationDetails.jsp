@@ -16,11 +16,24 @@
                         <div class="m-2">
                             <span>Id: <span class="font-weight-bold">${examination.id}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Date: <span class="font-weight-bold">${examination.date}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
+
+                             <div class="m-2">
+                                 <span>Doctor: <span class="font-weight-bold">${examination.doctor.id}</span></span>
+                             </div>
+                             <hr class="my-2">
+
+
+                             <div class="m-2">
+                                 <span>Patient: <span class="font-weight-bold">${examination.patient.id}</span></span>
+                             </div>
+                             <hr class="my-2">
+
+
                  </div>
             </div>
             <a  href="<c:url value="/examination/edit?id=${examination.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
