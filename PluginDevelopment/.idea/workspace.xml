@@ -21,39 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myplugin/generator/FrontNavigationGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/generator/FrontNavigationGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/myplugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myplugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_navigation.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_navigation.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/FrontNavigationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/FrontNavigationGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mbrs-test/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DoctorList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ExaminationList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ItemDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ItemForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ItemList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PatientDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PatientForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/PatientList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/ReportList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/SymptomList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/TherapyList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/navigation.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisList.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,11 +147,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="izmene" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601235850894">
+    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601241415276">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600867623526" />
-    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1601235850894" />
+    <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1601241415276" />
     <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601232918416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -195,46 +165,46 @@
     </state>
     <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601150711783" />
     <state x="437" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1601060008281" />
-    <state width="746" height="105" key="GridCell.Tab.0.bottom" timestamp="1601240942838">
+    <state width="746" height="2" key="GridCell.Tab.0.bottom" timestamp="1601241436916">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="746" height="105" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601240942838" />
-    <state width="746" height="105" key="GridCell.Tab.0.center" timestamp="1601240942838">
+    <state width="746" height="2" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601241436916" />
+    <state width="746" height="2" key="GridCell.Tab.0.center" timestamp="1601241436916">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="746" height="105" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601240942838" />
-    <state width="746" height="105" key="GridCell.Tab.0.left" timestamp="1601240942838">
+    <state width="746" height="2" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601241436916" />
+    <state width="746" height="2" key="GridCell.Tab.0.left" timestamp="1601241436916">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="746" height="105" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601240942838" />
-    <state width="746" height="105" key="GridCell.Tab.0.right" timestamp="1601240942838">
+    <state width="746" height="2" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601241436916" />
+    <state width="746" height="2" key="GridCell.Tab.0.right" timestamp="1601241436916">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="746" height="105" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601240942838" />
-    <state width="746" height="105" key="GridCell.Tab.1.bottom" timestamp="1601240942588">
+    <state width="746" height="2" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601241436916" />
+    <state width="746" height="2" key="GridCell.Tab.1.bottom" timestamp="1601241436537">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="746" height="105" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601240942588" />
-    <state width="746" height="105" key="GridCell.Tab.1.center" timestamp="1601240942588">
+    <state width="746" height="2" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601241436537" />
+    <state width="746" height="2" key="GridCell.Tab.1.center" timestamp="1601241436536">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="746" height="105" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601240942588" />
-    <state width="746" height="105" key="GridCell.Tab.1.left" timestamp="1601240942588">
+    <state width="746" height="2" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601241436536" />
+    <state width="746" height="2" key="GridCell.Tab.1.left" timestamp="1601241436536">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="746" height="105" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601240942588" />
-    <state width="746" height="105" key="GridCell.Tab.1.right" timestamp="1601240942588">
+    <state width="746" height="2" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601241436536" />
+    <state width="746" height="2" key="GridCell.Tab.1.right" timestamp="1601241436536">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="82" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="746" height="105" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601240942588" />
+    <state width="746" height="2" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601241436536" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1601150459406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

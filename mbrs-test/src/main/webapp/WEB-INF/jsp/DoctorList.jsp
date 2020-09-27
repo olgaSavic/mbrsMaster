@@ -7,16 +7,6 @@
     </head>
     <body>
         <%@ include file="navigation.jsp"%>
-        <script>
-	        $(document).ready( function () {
-    	        var table = $('#table_id').DataTable(
-    			    {
-    		            responsive: true
-    		        }
-    	        );
-
-	        } );
-        </script>
         <div class="container">
             <br/>
             <h3 class="text-center">List of doctors</h3>
