@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 border p-4">
-                <h5 class="text-center">New ${class_name_cap} form</h5>
+                <h5 class="text-center">${class_name_cap} form</h5>
                 <form:form class="p-2" action="${opening_bracket}action${closing_bracket}" method="post" modelAttribute="${class_name}">
                 <#list properties as property>
                     <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
@@ -87,7 +87,7 @@
                        </#if>
                     </#list>
                     <div>
-                         <button class="btn btn-success float-right" type="submit">Add ${class_name}</button>
+                         <button class="btn btn-success float-right" type="submit">Save ${class_name}</button>
                     </div>      
                  </form:form>
             </div>

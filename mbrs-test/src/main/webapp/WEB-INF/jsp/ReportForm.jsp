@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 border p-4">
-                <h5 class="text-center">New Report form</h5>
+                <h5 class="text-center">Report form</h5>
                 <form:form class="p-2" action="${action}" method="post" modelAttribute="report">
                     <div class="form-group">
                         <form:label path="id">Id</form:label>
@@ -32,7 +32,7 @@
                             </div>
 
                     <div>
-                         <button class="btn btn-success float-right" type="submit">Add report</button>
+                         <button class="btn btn-success float-right" type="submit">Save report</button>
                     </div>      
                  </form:form>
             </div>

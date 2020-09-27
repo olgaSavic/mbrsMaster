@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 border p-4">
-                <h5 class="text-center">New Therapy form</h5>
+                <h5 class="text-center">Therapy form</h5>
                 <form:form class="p-2" action="${action}" method="post" modelAttribute="therapy">
                     <div class="form-group">
                         <form:label path="id">Id</form:label>
@@ -28,7 +28,7 @@
 
 
                     <div>
-                         <button class="btn btn-success float-right" type="submit">Add therapy</button>
+                         <button class="btn btn-success float-right" type="submit">Save therapy</button>
                     </div>      
                  </form:form>
             </div>

@@ -16,28 +16,15 @@
                         <div class="m-2">
                             <span>Id: <span class="font-weight-bold">${diagnosis.id}</span></span>
                         </div>
-                        <hr class="my-2">			            
+                        <hr class="my-2">
                         <div class="m-2">
                             <span>Name: <span class="font-weight-bold">${diagnosis.name}</span></span>
                         </div>
-                        <hr class="my-2">			            
+                        <hr class="my-2">
                         <div class="m-2">
                             <span>Description: <span class="font-weight-bold">${diagnosis.description}</span></span>
                         </div>
-                        <hr class="my-2">			            
-
-                             <div class="m-2">
-                                 <span>Patient: <span class="font-weight-bold">${diagnosis.patient.id}</span></span>
-                             </div>
-                             <hr class="my-2">
-
-
-                             <div class="m-2">
-                                 <span>Doctor: <span class="font-weight-bold">${diagnosis.doctor.id}</span></span>
-                             </div>
-                             <hr class="my-2">
-
-
+                        <hr class="my-2">
                  </div>
             </div>
             <a  href="<c:url value="/diagnosis/edit?id=${diagnosis.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>

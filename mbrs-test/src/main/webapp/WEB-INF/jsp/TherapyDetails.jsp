@@ -16,13 +16,11 @@
                         <div class="m-2">
                             <span>Id: <span class="font-weight-bold">${therapy.id}</span></span>
                         </div>
-                        <hr class="my-2">			            
+                        <hr class="my-2">
                         <div class="m-2">
                             <span>Description: <span class="font-weight-bold">${therapy.description}</span></span>
                         </div>
-                        <hr class="my-2">			            
-
-
+                        <hr class="my-2">
                  </div>
             </div>
             <a  href="<c:url value="/therapy/edit?id=${therapy.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>
