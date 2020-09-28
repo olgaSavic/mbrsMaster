@@ -48,9 +48,7 @@ ${class.visibility} class ${class.name} {
     </#if>
     <#if (property.optional)??>
         <#lt><#if (property.cascade)?? || (property.fetch)?? || (property.mappedBy)??>, </#if>optional = ${property.optional?c}<#rt>
-    </#if>
-
-    <#lt>)</#if>
+    </#if><#lt>)</#if>
     ${property.visibility} <#rt>
     <#if property.upper == -1>
         <#lt>Set<<#rt>
@@ -79,7 +77,7 @@ ${class.visibility} class ${class.name} {
          this.${property.name} = ${property.name};
     }
     <#else>
-       public void set${property.name?cap_first}(${property.type} ${property.name}){
+    public void set${property.name?cap_first}(${property.type} ${property.name}){
          this.${property.name} = ${property.name};
     }
     </#if>

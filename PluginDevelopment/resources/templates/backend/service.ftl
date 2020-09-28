@@ -1,4 +1,4 @@
-package ${class.typePackage}.services;
+package ${class.typePackage};
 
 import java.util.Optional;
 import java.util.List;

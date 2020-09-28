@@ -5,6 +5,7 @@ import com.nomagic.uml2.ext.jmi.helpers.StereotypesHelper;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.*;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Class;
 import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.Package;
+import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.impl.EnumerationLiteralImpl;
 import com.nomagic.uml2.ext.magicdraw.mdprofiles.Stereotype;
 import myplugin.generator.fmmodel.*;
 import myplugin.generator.fmmodel.mapper.PropertyMapper;
@@ -172,10 +173,35 @@ public class ModelAnalyzer {
 				if (value.size() > 0) {
 					switch (tagName) {
 						case "cascade":
-							cascade = CascadeType.ALL;
+							EnumerationLiteralImpl enumerationLiteralimpl = (EnumerationLiteralImpl) value.get(0);
+				//			System.out.println(enumerationLiteralimpl.getEnumeration().getName());
+							System.out.println(enumerationLiteralimpl.getName());
+
+							if(enumerationLiteralimpl.getName().equals("ALL")){
+								cascade = CascadeType.ALL;
+							} else if (enumerationLiteralimpl.getName().equals("PERSIST")){
+								cascade = CascadeType.PERSIST;
+							} else if (enumerationLiteralimpl.getName().equals("MERGE")){
+								cascade = CascadeType.MERGE;
+							} else if (enumerationLiteralimpl.getName().equals("FETCH")){
+								cascade = CascadeType.FETCH;
+							} else if (enumerationLiteralimpl.getName().equals("REMOVE")){
+								cascade = CascadeType.REMOVE;
+							} else {
+								cascade = CascadeType.DETACH;
+							}
+
 							break;
-						case "fetchType":
-							fetchType = (FetchType) value.get(0);
+						case "fetch":
+							EnumerationLiteralImpl enumerationLiteralFetch = (EnumerationLiteralImpl) value.get(0);
+							//			System.out.println(enumerationLiteralimpl.getEnumeration().getName());
+							System.out.println(enumerationLiteralFetch.getName());
+
+							if(enumerationLiteralFetch.getName().equals("EAGER")){
+								fetchType = FetchType.EAGER;
+							} else {
+								fetchType = FetchType.LAZY;
+							}
 							break;
 						case "mappedBy":
 							mappedBy = (String) value.get(0);
