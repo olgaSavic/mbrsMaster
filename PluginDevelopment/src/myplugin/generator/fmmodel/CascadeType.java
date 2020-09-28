@@ -5,6 +5,6 @@ public enum CascadeType {
     PERSIST,
     MERGE,
     FETCH,
-    DETACHE,
+    DETACH,
     REMOVE
 }

@@ -172,7 +172,7 @@ public class ModelAnalyzer {
 				if (value.size() > 0) {
 					switch (tagName) {
 						case "cascade":
-							cascade = (CascadeType) value.get(0);
+							cascade = CascadeType.ALL;
 							break;
 						case "fetchType":
 							fetchType = (FetchType) value.get(0);

@@ -40,15 +40,21 @@ class GenerateAction extends MDAction {
 			generateController(root);
 			generateService(root);
 			generateServiceImpl(root);
-			generateMain(root);
+			//generateMain(root);
 
 			JOptionPane.showMessageDialog(null, "Code is successfully generated! Generated code is in folder: c:/mbrs" );
 			exportToXml();
 
 			//generate repository
 			generateRepository(root);
-			generatePom( root);
-			generateAppProperties(root);
+			//generatePom( root);
+			//generateAppProperties(root);
+
+			//generate front
+			generateNavigation(root);
+			generateForm(root);
+			generateList(root);
+			generateDetails(root);
 
 		} catch (AnalyzeException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
@@ -160,5 +166,43 @@ class GenerateAction extends MDAction {
 		repositoryGenerator.generate();
 
 	}
+
+	// FRONT-END
+	private void generateForm(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("FormGenerator");
+		FrontFormGenerator formGenerator = new FrontFormGenerator(generatorOptions);
+		formGenerator.generate();
+	}
+
+	private void generateList(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("ListGenerator");
+		FrontListGenerator listGenerator = new FrontListGenerator(generatorOptions);
+		listGenerator.generate();
+	}
+
+	private void generateNavigation(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("NavigationGenerator");
+		FrontNavigationGenerator navigationGenerator = new FrontNavigationGenerator(generatorOptions);
+		navigationGenerator.generate();
+	}
+
+	private void generateDetails(Package root)
+			throws AnalyzeException {
+		ModelAnalyzer analyzer = new ModelAnalyzer(root, "");
+		analyzer.prepareModel();
+		GeneratorOptions generatorOptions = ProjectOptions.getProjectOptions().getGeneratorOptions().get("DetailsGenerator");
+		FrontDetailsGenerator detailsGenerator = new FrontDetailsGenerator(generatorOptions);
+		detailsGenerator.generate();
+	}
+
 
 }

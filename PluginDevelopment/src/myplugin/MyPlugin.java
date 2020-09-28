@@ -57,9 +57,26 @@ public class MyPlugin extends com.nomagic.magicdraw.plugins.Plugin {
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("PomGenerator", pomOptions);
 		pomOptions.setTemplateDir(pluginDir + File.separator + pomOptions.getTemplateDir());
 
-		GeneratorOptions appPropOptions = new GeneratorOptions("c:/temp/mbrs/src/main/java", "applicationproperties", "templates", "application.properties.xml", true, "");
+		GeneratorOptions appPropOptions = new GeneratorOptions("c:/temp/mbrs/src/main/resources", "applicationproperties", "templates", "application.properties.xml", true, "");
 		ProjectOptions.getProjectOptions().getGeneratorOptions().put("AppPropertiesGenerator", appPropOptions);
 		appPropOptions.setTemplateDir(pluginDir + File.separator + appPropOptions.getTemplateDir());
+
+		// FRONT-END
+		GeneratorOptions formOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_form", "templates", "{0}.jsp", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("FormGenerator", formOptions);
+		formOptions.setTemplateDir(pluginDir + File.separator + formOptions.getTemplateDir());
+
+		GeneratorOptions listOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_list", "templates", "{0}.jsp", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("ListGenerator", listOptions);
+		listOptions.setTemplateDir(pluginDir + File.separator + listOptions.getTemplateDir());
+
+		GeneratorOptions navigationOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_navigation", "templates", "{0}.jsp", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("NavigationGenerator", navigationOptions);
+		navigationOptions.setTemplateDir(pluginDir + File.separator + navigationOptions.getTemplateDir());
+
+		GeneratorOptions detailsOptions = new GeneratorOptions("c:/temp/mbrs/src/main/webapp/WEB-INF/jsp", "jsp_details_page", "templates", "{0}.jsp", true, "");
+		ProjectOptions.getProjectOptions().getGeneratorOptions().put("DetailsGenerator", detailsOptions);
+		detailsOptions.setTemplateDir(pluginDir + File.separator + detailsOptions.getTemplateDir());
 	}
 
 	private NMAction[] getSubmenuActions()
