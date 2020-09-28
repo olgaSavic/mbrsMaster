@@ -19,7 +19,7 @@ public class Examination {
     private String date;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Doctor doctor;
 
     @ManyToOne

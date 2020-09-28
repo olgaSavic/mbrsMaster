@@ -34,10 +34,10 @@ public class Doctor {
     @OneToMany
     private Set<Patient> patient;
 
-    @OneToMany(mappedBy = "doctor")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
     private Set<Examination> examination;
 
-    @OneToMany(mappedBy = "doctor")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
     private Set<Diagnosis> diagnosis;
 
     public Long getId(){
