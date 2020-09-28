@@ -15,7 +15,7 @@ public class Report {
     private Long id;
 
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private Set<Item> item;
 
     @ManyToOne

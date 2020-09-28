@@ -34,7 +34,7 @@ public class Item {
     return name;
     }
 
-       public void setName(String name){
+    public void setName(String name){
          this.name = name;
     }
 
@@ -42,7 +42,7 @@ public class Item {
     return description;
     }
 
-       public void setDescription(String description){
+    public void setDescription(String description){
          this.description = description;
     }
 

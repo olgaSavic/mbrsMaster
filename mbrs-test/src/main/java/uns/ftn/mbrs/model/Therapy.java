@@ -35,7 +35,7 @@ public class Therapy {
     return description;
     }
 
-       public void setDescription(String description){
+    public void setDescription(String description){
          this.description = description;
     }
 

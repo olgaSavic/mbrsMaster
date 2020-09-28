@@ -34,10 +34,10 @@ public class Doctor {
     @OneToMany
     private Set<Patient> patient;
 
-    @OneToMany
+    @OneToMany(mappedBy = "doctor")
     private Set<Examination> examination;
 
-    @OneToMany
+    @OneToMany(mappedBy = "doctor")
     private Set<Diagnosis> diagnosis;
 
     public Long getId(){
@@ -51,7 +51,7 @@ public class Doctor {
     return surname;
     }
 
-       public void setSurname(String surname){
+    public void setSurname(String surname){
          this.surname = surname;
     }
 
@@ -59,7 +59,7 @@ public class Doctor {
     return jmbg;
     }
 
-       public void setJmbg(String jmbg){
+    public void setJmbg(String jmbg){
          this.jmbg = jmbg;
     }
 
@@ -67,7 +67,7 @@ public class Doctor {
     return phoneNumber;
     }
 
-       public void setPhoneNumber(String phoneNumber){
+    public void setPhoneNumber(String phoneNumber){
          this.phoneNumber = phoneNumber;
     }
 
@@ -75,7 +75,7 @@ public class Doctor {
     return name;
     }
 
-       public void setName(String name){
+    public void setName(String name){
          this.name = name;
     }
 
@@ -83,7 +83,7 @@ public class Doctor {
     return specialty;
     }
 
-       public void setSpecialty(String specialty){
+    public void setSpecialty(String specialty){
          this.specialty = specialty;
     }
 

@@ -25,8 +25,7 @@ public class Examination {
     @ManyToOne
     private Patient patient;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "examination"
-)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "examination")
     private Set<Report> report;
 
     public Long getId(){
@@ -40,7 +39,7 @@ public class Examination {
     return date;
     }
 
-       public void setDate(String date){
+    public void setDate(String date){
          this.date = date;
     }
 

@@ -42,7 +42,7 @@ public class Diagnosis {
     return name;
     }
 
-       public void setName(String name){
+    public void setName(String name){
          this.name = name;
     }
 
@@ -50,7 +50,7 @@ public class Diagnosis {
     return description;
     }
 
-       public void setDescription(String description){
+    public void setDescription(String description){
          this.description = description;
     }
 

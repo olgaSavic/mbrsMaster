@@ -58,7 +58,7 @@ public class Patient {
     return name;
     }
 
-       public void setName(String name){
+    public void setName(String name){
          this.name = name;
     }
 
@@ -66,7 +66,7 @@ public class Patient {
     return surname;
     }
 
-       public void setSurname(String surname){
+    public void setSurname(String surname){
          this.surname = surname;
     }
 
@@ -81,7 +81,7 @@ public class Patient {
     return address;
     }
 
-       public void setAddress(String address){
+    public void setAddress(String address){
          this.address = address;
     }
 
@@ -89,7 +89,7 @@ public class Patient {
     return phoneNumber;
     }
 
-       public void setPhoneNumber(String phoneNumber){
+    public void setPhoneNumber(String phoneNumber){
          this.phoneNumber = phoneNumber;
     }
 
