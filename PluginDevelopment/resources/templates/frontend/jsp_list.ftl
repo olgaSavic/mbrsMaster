@@ -42,7 +42,6 @@
                     		<#list properties as property>
                         	<#if entity_properties[property.type]??>
                         	<#if property.upper == -1>
-                        	<#-- Not sure about @ManyToMany -->
                         	<td>
 
                         	<c:forEach items="${ "${" + class_name + "." + property.name + "}" }">
@@ -50,7 +49,6 @@
                         	</c:forEach>
                         	</td>
                         	<#else>
-                        	<#-- @ManyToOne or @OneToOne -->
                         	<@print_complex_property prop = property />
                         	</#if>
                         	<#else>

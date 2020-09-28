@@ -38,8 +38,7 @@
                     	${label}
                         <form:select path="${property.name}" cssClass="form-control">
                             <option value="">Select a ${property.name}</option>
-                            <#-- TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY -->
-                            
+
                             <c:set var="enum_val"><#list enum_values[property.type] as val>${val}<#sep>,</#sep></#list></c:set>
                             <c:forEach items="${opening_bracket}enum_val${closing_bracket}" var="val">
         				        <option value="${opening_bracket}val${closing_bracket}" <c:if test="${opening_bracket} val == ${class_name}.${property.name} ${closing_bracket}">selected</c:if>  >${opening_bracket}val${closing_bracket}</option>
@@ -55,7 +54,6 @@
                     </div>
                     <#elseif property.type == "String" || property.type == "string" || property.type == "Long" || property.type == "long" || property.type == "date" || property.type == "Date">
                     <#-- text -->
-                    <#-- textarea TODO -->
                     <div class="form-group">
                         ${label}
                         <form:input cssClass="form-control" path="${property.name}" />
@@ -66,7 +64,7 @@
 
                     <#list  class.FMLinkedProperty as property>
                         <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
-                        <#-- ManyToOne -->
+                        <#-- ManyToOne or OneToOne -->
                         <#if property.upper == 1 && property.oppositeEnd== -1>
                             <div class="form-group">
                                 ${label}

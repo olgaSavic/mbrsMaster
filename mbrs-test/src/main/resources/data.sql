@@ -19,29 +19,17 @@ insert into patient(address, jmbg, name, phone_number, surname)
 insert into patient(address, jmbg, name, phone_number, surname)
   values ("7th Boulevard", "807023", "Chuck", "065-123", "De Niro");
 
-insert into doctor_patient (doctor_id, patient_id) values (1,1);
-insert into doctor_patient (doctor_id, patient_id) values (2,2);
-
 insert into diagnosis(description, name)
 	values ("Description", "Flu");
 insert into diagnosis(description, name)
 	values ("Second Description", "Headache");
-
-insert into patient_diagnosis (patient_id, diagnosis_id) values (1,1);
-insert into patient_diagnosis (patient_id, diagnosis_id) values (2,2);
 
 insert into examination(date)
 	values ("2020-05-05");
 insert into examination(date)
 	values ("2020-06-06");
 
-insert into patient_examination (patient_id, examination_id) values (1,1);
-insert into patient_examination (patient_id, examination_id) values (2,2);
-
-insert into report(examination_id)
+insert into report(id)
     values (1);
-insert into report(examination_id)
+insert into report(id)
     values (2);
-
-insert into report_item (report_id, item_id) values (1,1);
-insert into report_item (report_id, item_id) values (2,2);
