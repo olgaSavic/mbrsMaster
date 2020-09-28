@@ -19,10 +19,10 @@ public class Therapy {
 
 
     @ManyToMany
-    private Set<Diagnosis> diagnosiss;
+    private Set<Diagnosis> diagnosis;
 
     @ManyToMany
-    private Set<Patient> patients;
+    private Set<Patient> patient;
 
     public Long getId(){
          return id;
@@ -40,5 +40,19 @@ public class Therapy {
     }
 
 
+
+    public Set<Diagnosis> getDiagnosis(){
+        return diagnosis;
+    }
+    public void setDiagnosis(Set<Diagnosis> diagnosis){
+        this.diagnosis = diagnosis;
+    }
+
+    public Set<Patient> getPatient(){
+        return patient;
+    }
+    public void setPatient(Set<Patient> patient){
+        this.patient = patient;
+    }
 
 }

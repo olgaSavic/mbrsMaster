@@ -2,12 +2,14 @@
 <#assign class_name_cap = class.name?cap_first>
 <#assign class_name = class.name?uncap_first>
 <#assign class_name_id = "${" + class_name + ".id" + "}">
-<#assign class_name_plural = u.plural(class_name)>
+<#assign class_name_plural = class_name + "s">
+
 <#assign opening_bracket = "${">
 <#assign closing_bracket = "}">
 <#macro print_complex_property prop>
 	<#local property_name_url = prop.type.name?uncap_first />
 	<#local property_name = prop.name />
+    <#local property_name_plural = property_name + "s">
 	<#local property_name_cap = property_name?cap_first />
 	<#local property_id = "${" + class_name + "." + property_name + ".id" + "}" />
                         <td><a href="<c:url value="/${property_name_url}/${property_id}"/>">${property_name_cap} ${property_id}</a></td>
@@ -59,32 +61,28 @@
                         <form:input cssClass="form-control" path="${property.name}" />
                     </div>
                     </#if>
-<#--                    <#else>-->
-<#--                        <div class="form-group">-->
-<#--                            ${label}-->
-<#--                            <form:select path="${property.name}" cssClass="form-control">-->
-<#--                                <option value="-1">Select a ${property.name}</option>-->
-<#--                                &lt;#&ndash; TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY &ndash;&gt;-->
-<#--                                <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>-->
-<#--                            </form:select>-->
-<#--                        </div>-->
                     </#if>
                 </#list>
 
                     <#list  class.FMLinkedProperty as property>
                         <#assign label= "<form:label path=\"${property.name}\">${property.name?cap_first}</form:label>">
-
+                        <#-- ManyToOne -->
                         <#if property.upper == 1 && property.oppositeEnd== -1>
                             <div class="form-group">
                                 ${label}
                                 <form:select path="${property.name}" cssClass="form-control">
                                     <option value="-1">Select a ${property.name}</option>
-                                    <#-- TODO: SET SOMEHOW ITEMLABEL TO SOME DISPLAY PROPERTY, ADDITIONAL ITEMVALUE TO CUSTOM ID PROPERTY -->
-                                    <form:options items="${opening_bracket}${u.plural(property.name)}${closing_bracket}" itemValue="id"/>
+                                    <form:options items="${opening_bracket}${property.name}s${closing_bracket}" itemValue="id"/>
                                 </form:select>
                             </div>
+                        <#-- ManyToMany or OneToMany -->
+                         <#elseif property.upper == -1>
+                            <div class="form-group ">
+                            ${label}
+                            <form:checkboxes items="${opening_bracket}${property.name}s${closing_bracket}" path="${property.name}" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
+                        </#if>
 
-                       </#if>
                     </#list>
                     <div>
                          <button class="btn btn-success float-right" type="submit">Save ${class_name}</button>

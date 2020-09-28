@@ -21,7 +21,7 @@ public class Symptom {
 
 
     @ManyToMany
-    private Set<Patient> patients;
+    private Set<Patient> patient;
 
     public Long getId(){
          return id;
@@ -47,5 +47,12 @@ public class Symptom {
     }
 
 
+
+    public Set<Patient> getPatient(){
+        return patient;
+    }
+    public void setPatient(Set<Patient> patient){
+        this.patient = patient;
+    }
 
 }

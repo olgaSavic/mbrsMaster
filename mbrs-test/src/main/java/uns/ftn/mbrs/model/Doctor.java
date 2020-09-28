@@ -34,11 +34,11 @@ public class Doctor {
     @OneToMany
     private Set<Patient> patient;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
-    private Set<Examination> examinations;
+    @OneToMany
+    private Set<Examination> examination;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
-    private Set<Diagnosis> diagnosiss;
+    @OneToMany
+    private Set<Diagnosis> diagnosis;
 
     public Long getId(){
          return id;
@@ -88,5 +88,26 @@ public class Doctor {
     }
 
 
+
+    public Set<Patient> getPatient(){
+        return patient;
+    }
+    public void setPatient(Set<Patient> patient){
+        this.patient = patient;
+    }
+
+    public Set<Examination> getExamination(){
+        return examination;
+    }
+    public void setExamination(Set<Examination> examination){
+        this.examination = examination;
+    }
+
+    public Set<Diagnosis> getDiagnosis(){
+        return diagnosis;
+    }
+    public void setDiagnosis(Set<Diagnosis> diagnosis){
+        this.diagnosis = diagnosis;
+    }
 
 }

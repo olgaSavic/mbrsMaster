@@ -16,27 +16,30 @@
                         <div class="m-2">
                             <span>Id: <span class="font-weight-bold">${doctor.id}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Surname: <span class="font-weight-bold">${doctor.surname}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Jmbg: <span class="font-weight-bold">${doctor.jmbg}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>PhoneNumber: <span class="font-weight-bold">${doctor.phoneNumber}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Name: <span class="font-weight-bold">${doctor.name}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
                         <div class="m-2">
                             <span>Specialty: <span class="font-weight-bold">${doctor.specialty}</span></span>
                         </div>
-                        <hr class="my-2">
+                        <hr class="my-2">			            
+
+
+
                  </div>
             </div>
             <a  href="<c:url value="/doctor/edit?id=${doctor.id}"/>" class="btn btn-sm btn-outline-primary mt-4">Edit</a>

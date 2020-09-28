@@ -29,6 +29,10 @@
                         <form:input cssClass="form-control" path="description" />
                     </div>
 
+                            <div class="form-group ">
+                            <form:label path="report">Report</form:label>
+                            <form:checkboxes items="${reports}" path="report" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
 
                     <div>
                          <button class="btn btn-success float-right" type="submit">Save item</button>

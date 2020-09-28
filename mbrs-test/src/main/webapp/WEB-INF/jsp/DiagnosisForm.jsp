@@ -29,7 +29,6 @@
                         <form:input cssClass="form-control" path="description" />
                     </div>
 
-
                             <div class="form-group">
                                 <form:label path="patient">Patient</form:label>
                                 <form:select path="patient" cssClass="form-control">
@@ -37,7 +36,6 @@
                                     <form:options items="${patients}" itemValue="id"/>
                                 </form:select>
                             </div>
-
 
                             <div class="form-group">
                                 <form:label path="doctor">Doctor</form:label>
@@ -47,6 +45,10 @@
                                 </form:select>
                             </div>
 
+                            <div class="form-group ">
+                            <form:label path="therapy">Therapy</form:label>
+                            <form:checkboxes items="${therapys}" path="therapy" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
 
                     <div>
                          <button class="btn btn-success float-right" type="submit">Save diagnosis</button>

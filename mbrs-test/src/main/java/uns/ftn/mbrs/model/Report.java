@@ -16,7 +16,7 @@ public class Report {
 
 
     @ManyToMany
-    private Set<Item> reportItems;
+    private Set<Item> item;
 
     @ManyToOne
     private Examination examination;
@@ -29,6 +29,13 @@ public class Report {
     }
 
 
+
+    public Set<Item> getItem(){
+        return item;
+    }
+    public void setItem(Set<Item> item){
+        this.item = item;
+    }
     public Examination getExamination(){
         return examination;
     }

@@ -7,6 +7,7 @@ import uns.ftn.mbrs.model.*;
 import uns.ftn.mbrs.service.ExaminationService;
 import uns.ftn.mbrs.service.DoctorService;
 import uns.ftn.mbrs.service.PatientService;
+import uns.ftn.mbrs.service.ReportService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,6 +31,8 @@ public class ExaminationController {
     private DoctorService doctorService;
     @Autowired
     private PatientService patientService;
+    @Autowired
+    private ReportService reportService;
 
     @GetMapping(value = "allExaminations")
     public String getAllExamination(Model model) {
@@ -45,6 +48,8 @@ public class ExaminationController {
         model.addAttribute("doctors", doctors);
         List<Patient> patients = patientService.getAll();
         model.addAttribute("patients", patients);
+        List<Report> reports = reportService.getAll();
+        model.addAttribute("reports", reports);
         return "ExaminationForm";
     }
 
@@ -52,10 +57,12 @@ public class ExaminationController {
     public String editExamination(@RequestParam("id") String id, Model model) {
         Examination examination = examinationService.getOne(Long.parseLong(id)).orElse(null);
         model.addAttribute("examination", examination);
-                List<Doctor> doctors = doctorService.getAll();
-                model.addAttribute("doctors", doctors);
-                List<Patient> patients = patientService.getAll();
-                model.addAttribute("patients", patients);
+            List<Doctor> doctors = doctorService.getAll();
+            model.addAttribute("doctors", doctors);
+            List<Patient> patients = patientService.getAll();
+            model.addAttribute("patients", patients);
+            List<Report> reports = reportService.getAll();
+            model.addAttribute("reports", reports);
         return "ExaminationForm";
     }
 

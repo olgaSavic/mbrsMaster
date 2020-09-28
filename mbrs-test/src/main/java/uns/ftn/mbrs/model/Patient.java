@@ -36,16 +36,16 @@ public class Patient {
     private Doctor doctor;
 
     @ManyToMany
-    private Set<Symptom> symptoms;
+    private Set<Symptom> symptom;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
+    @OneToMany
     private Set<Examination> examination;
 
     @OneToMany
     private Set<Diagnosis> diagnosis;
 
     @ManyToMany
-    private Set<Therapy> therapies;
+    private Set<Therapy> therapy;
 
     public Long getId(){
          return id;
@@ -99,6 +99,34 @@ public class Patient {
     }
     public void setDoctor(Doctor doctor){
         this.doctor = doctor;
+    }
+
+    public Set<Symptom> getSymptom(){
+        return symptom;
+    }
+    public void setSymptom(Set<Symptom> symptom){
+        this.symptom = symptom;
+    }
+
+    public Set<Examination> getExamination(){
+        return examination;
+    }
+    public void setExamination(Set<Examination> examination){
+        this.examination = examination;
+    }
+
+    public Set<Diagnosis> getDiagnosis(){
+        return diagnosis;
+    }
+    public void setDiagnosis(Set<Diagnosis> diagnosis){
+        this.diagnosis = diagnosis;
+    }
+
+    public Set<Therapy> getTherapy(){
+        return therapy;
+    }
+    public void setTherapy(Set<Therapy> therapy){
+        this.therapy = therapy;
     }
 
 }

@@ -19,13 +19,14 @@ public class Examination {
     private String date;
 
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Doctor doctor;
 
     @ManyToOne
     private Patient patient;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "examination")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "examination"
+)
     private Set<Report> report;
 
     public Long getId(){
@@ -55,6 +56,13 @@ public class Examination {
     }
     public void setPatient(Patient patient){
         this.patient = patient;
+    }
+
+    public Set<Report> getReport(){
+        return report;
+    }
+    public void setReport(Set<Report> report){
+        this.report = report;
     }
 
 }

@@ -25,11 +25,11 @@ public class Diagnosis {
     @ManyToOne
     private Patient patient;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Doctor doctor;
 
     @ManyToMany
-    private Set<Therapy> therapies;
+    private Set<Therapy> therapy;
 
     public Long getId(){
          return id;
@@ -66,6 +66,13 @@ public class Diagnosis {
     }
     public void setDoctor(Doctor doctor){
         this.doctor = doctor;
+    }
+
+    public Set<Therapy> getTherapy(){
+        return therapy;
+    }
+    public void setTherapy(Set<Therapy> therapy){
+        this.therapy = therapy;
     }
 
 }

@@ -48,4 +48,11 @@ public class Item {
 
 
 
+    public Set<Report> getReport(){
+        return report;
+    }
+    public void setReport(Set<Report> report){
+        this.report = report;
+    }
+
 }

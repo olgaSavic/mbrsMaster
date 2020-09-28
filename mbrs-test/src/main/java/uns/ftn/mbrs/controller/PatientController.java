@@ -6,6 +6,10 @@ import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.PatientService;
 import uns.ftn.mbrs.service.DoctorService;
+import uns.ftn.mbrs.service.SymptomService;
+import uns.ftn.mbrs.service.ExaminationService;
+import uns.ftn.mbrs.service.DiagnosisService;
+import uns.ftn.mbrs.service.TherapyService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +31,14 @@ public class PatientController {
 
     @Autowired
     private DoctorService doctorService;
+    @Autowired
+    private SymptomService symptomService;
+    @Autowired
+    private ExaminationService examinationService;
+    @Autowired
+    private DiagnosisService diagnosisService;
+    @Autowired
+    private TherapyService therapyService;
 
     @GetMapping(value = "allPatients")
     public String getAllPatient(Model model) {
@@ -40,6 +52,14 @@ public class PatientController {
         model.addAttribute("patient", new Patient());
         List<Doctor> doctors = doctorService.getAll();
         model.addAttribute("doctors", doctors);
+        List<Symptom> symptoms = symptomService.getAll();
+        model.addAttribute("symptoms", symptoms);
+        List<Examination> examinations = examinationService.getAll();
+        model.addAttribute("examinations", examinations);
+        List<Diagnosis> diagnosiss = diagnosisService.getAll();
+        model.addAttribute("diagnosiss", diagnosiss);
+        List<Therapy> therapys = therapyService.getAll();
+        model.addAttribute("therapys", therapys);
         return "PatientForm";
     }
 
@@ -47,8 +67,16 @@ public class PatientController {
     public String editPatient(@RequestParam("id") String id, Model model) {
         Patient patient = patientService.getOne(Long.parseLong(id)).orElse(null);
         model.addAttribute("patient", patient);
-                List<Doctor> doctors = doctorService.getAll();
-                model.addAttribute("doctors", doctors);
+            List<Doctor> doctors = doctorService.getAll();
+            model.addAttribute("doctors", doctors);
+            List<Symptom> symptoms = symptomService.getAll();
+            model.addAttribute("symptoms", symptoms);
+            List<Examination> examinations = examinationService.getAll();
+            model.addAttribute("examinations", examinations);
+            List<Diagnosis> diagnosiss = diagnosisService.getAll();
+            model.addAttribute("diagnosiss", diagnosiss);
+            List<Therapy> therapys = therapyService.getAll();
+            model.addAttribute("therapys", therapys);
         return "PatientForm";
     }
 

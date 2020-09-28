@@ -7,6 +7,7 @@ import uns.ftn.mbrs.model.*;
 import uns.ftn.mbrs.service.DiagnosisService;
 import uns.ftn.mbrs.service.PatientService;
 import uns.ftn.mbrs.service.DoctorService;
+import uns.ftn.mbrs.service.TherapyService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,6 +31,8 @@ public class DiagnosisController {
     private PatientService patientService;
     @Autowired
     private DoctorService doctorService;
+    @Autowired
+    private TherapyService therapyService;
 
     @GetMapping(value = "allDiagnosiss")
     public String getAllDiagnosis(Model model) {
@@ -45,6 +48,8 @@ public class DiagnosisController {
         model.addAttribute("patients", patients);
         List<Doctor> doctors = doctorService.getAll();
         model.addAttribute("doctors", doctors);
+        List<Therapy> therapys = therapyService.getAll();
+        model.addAttribute("therapys", therapys);
         return "DiagnosisForm";
     }
 
@@ -52,10 +57,12 @@ public class DiagnosisController {
     public String editDiagnosis(@RequestParam("id") String id, Model model) {
         Diagnosis diagnosis = diagnosisService.getOne(Long.parseLong(id)).orElse(null);
         model.addAttribute("diagnosis", diagnosis);
-                List<Patient> patients = patientService.getAll();
-                model.addAttribute("patients", patients);
-                List<Doctor> doctors = doctorService.getAll();
-                model.addAttribute("doctors", doctors);
+            List<Patient> patients = patientService.getAll();
+            model.addAttribute("patients", patients);
+            List<Doctor> doctors = doctorService.getAll();
+            model.addAttribute("doctors", doctors);
+            List<Therapy> therapys = therapyService.getAll();
+            model.addAttribute("therapys", therapys);
         return "DiagnosisForm";
     }
 

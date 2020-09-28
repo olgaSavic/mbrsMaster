@@ -41,8 +41,20 @@
                         <form:input cssClass="form-control" path="specialty" />
                     </div>
 
+                            <div class="form-group ">
+                            <form:label path="patient">Patient</form:label>
+                            <form:checkboxes items="${patients}" path="patient" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
 
+                            <div class="form-group ">
+                            <form:label path="examination">Examination</form:label>
+                            <form:checkboxes items="${examinations}" path="examination" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
 
+                            <div class="form-group ">
+                            <form:label path="diagnosis">Diagnosis</form:label>
+                            <form:checkboxes items="${diagnosiss}" path="diagnosis" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
 
                     <div>
                          <button class="btn btn-success float-right" type="submit">Save doctor</button>

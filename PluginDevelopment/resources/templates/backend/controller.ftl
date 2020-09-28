@@ -8,6 +8,8 @@ import uns.ftn.mbrs.service.${class.name}Service;
 <#list class.FMLinkedProperty as property>
     <#if property.upper == 1 && property.oppositeEnd== -1>
 import uns.ftn.mbrs.service.${property.name?cap_first}Service;
+    <#elseif property.upper == -1>
+import uns.ftn.mbrs.service.${property.name?cap_first}Service;
     </#if>
 </#list>
 
@@ -33,6 +35,9 @@ public class ${class.name?cap_first}Controller {
     <#if property.upper == 1 && property.oppositeEnd== -1>
     @Autowired
     private ${property.name?cap_first}Service ${property.name?lower_case}Service;
+    <#elseif property.upper == -1>
+    @Autowired
+    private ${property.name?cap_first}Service ${property.name?lower_case}Service;
     </#if>
 </#list>
 
@@ -50,6 +55,9 @@ public class ${class.name?cap_first}Controller {
     <#if property.upper == 1 && property.oppositeEnd== -1>
         List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
         model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
+    <#elseif property.upper == -1>
+        List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
+        model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
     </#if>
     </#list>
         return "${class.name?cap_first}Form";
@@ -61,8 +69,11 @@ public class ${class.name?cap_first}Controller {
         model.addAttribute("${class.name?lower_case}", ${class.name?lower_case});
         <#list class.FMLinkedProperty as property>
             <#if property.upper == 1 && property.oppositeEnd== -1>
-                List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
-                model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
+            List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
+            model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
+            <#elseif property.upper == -1>
+            List<${property.name?cap_first}> ${property.name?lower_case}s = ${property.name?lower_case}Service.getAll();
+            model.addAttribute("${property.name?lower_case}s", ${property.name?lower_case}s);
             </#if>
         </#list>
         return "${class.name?cap_first}Form";

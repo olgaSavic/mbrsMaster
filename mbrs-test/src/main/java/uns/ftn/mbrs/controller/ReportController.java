@@ -5,6 +5,7 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.ReportService;
+import uns.ftn.mbrs.service.ItemService;
 import uns.ftn.mbrs.service.ExaminationService;
 
 import org.springframework.http.HttpStatus;
@@ -26,6 +27,8 @@ public class ReportController {
     private ReportService reportService;
 
     @Autowired
+    private ItemService itemService;
+    @Autowired
     private ExaminationService examinationService;
 
     @GetMapping(value = "allReports")
@@ -38,6 +41,8 @@ public class ReportController {
     @GetMapping(value = "report/new")
     public String newReport(Model model) {
         model.addAttribute("report", new Report());
+        List<Item> items = itemService.getAll();
+        model.addAttribute("items", items);
         List<Examination> examinations = examinationService.getAll();
         model.addAttribute("examinations", examinations);
         return "ReportForm";
@@ -47,8 +52,10 @@ public class ReportController {
     public String editReport(@RequestParam("id") String id, Model model) {
         Report report = reportService.getOne(Long.parseLong(id)).orElse(null);
         model.addAttribute("report", report);
-                List<Examination> examinations = examinationService.getAll();
-                model.addAttribute("examinations", examinations);
+            List<Item> items = itemService.getAll();
+            model.addAttribute("items", items);
+            List<Examination> examinations = examinationService.getAll();
+            model.addAttribute("examinations", examinations);
         return "ReportForm";
     }
 

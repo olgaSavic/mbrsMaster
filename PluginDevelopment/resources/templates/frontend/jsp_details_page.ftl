@@ -2,13 +2,14 @@
 <#assign class_name_cap = class.name?cap_first>
 <#assign class_name = class.name?uncap_first>
 <#assign class_name_id = "${" + class_name + ".id" + "}">
-<#assign class_name_plural = u.plural(class_name)>
+<#assign class_name_plural = class_name + "s">
 <#assign opening_bracket = "${">
 <#assign closing_bracket = "}">
 <#assign empty_word = "empty ">
 <#macro print_complex_property prop>
 	<#local property_name_url = prop.type?uncap_first />
 	<#local property_name = prop.name />
+    <#local property_name_plural = property_name + "s">
 	<#local property_name_cap = property_name?cap_first />
 	<#local property_id = "${" + class_name + "." + property_name + "}" />
                         <div class="m-2">
@@ -33,21 +34,6 @@
                  <div>
                  <#list properties as property>
                     <#if entity_properties[property.type]??>
-<#--                        <#if property.upper == -1>-->
-<#--                        <div class="m-2">-->
-<#--                        <span>${u.plural(property.name?cap_first)}:-->
-<#--                        <c:if test="${ "${" + empty_word  + class_name + "." + property.name + "}" }">[...]</c:if>  -->
-<#--                        <c:forEach items="${ "${" + class_name + "." + property.name + "}" }" var="${property.name}_single">-->
-<#--                        <#assign property_id = "${" + property.name + "_single.id" + "}" />-->
-<#--                            <span class="font-weight-bold"><a href="<c:url value="/${property.type?uncap_first}/${property_id}"/>">${property.name?cap_first} ${property_id}</a></span>-->
-<#--                        </c:forEach>-->
-<#--                        </span>-->
-<#--                        <hr class="my-2">-->
-<#--                        </div>-->
-<#--                        <#else>-->
-<#--                        <@print_complex_property prop = property />-->
-<#--                        </#if>-->
-<#--                        <#else>-->
                         <div class="m-2">
                             <span>${property.name?cap_first}: <span class="font-weight-bold">${opening_bracket}${class_name}.${property.name}${closing_bracket}</span></span>
                         </div>

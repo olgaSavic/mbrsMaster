@@ -115,6 +115,14 @@ ${class.visibility} class ${class.name} {
     public void set${property.name?cap_first}(${property.type} ${property.name}){
         this.${property.name} = ${property.name};
     }
+    <#elseif property.upper == -1>
+
+    public Set<${property.type}> get${property.name?cap_first}(){
+        return ${property.name};
+    }
+    public void set${property.name?cap_first}(Set<${property.type}> ${property.name}){
+        this.${property.name} = ${property.name};
+    }
     </#if>
 </#list>
 

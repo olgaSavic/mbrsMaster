@@ -5,6 +5,7 @@ import java.util.*;
 import uns.ftn.mbrs.model.*;
 
 import uns.ftn.mbrs.service.ItemService;
+import uns.ftn.mbrs.service.ReportService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +25,8 @@ public class ItemController {
     @Autowired
     private ItemService itemService;
 
+    @Autowired
+    private ReportService reportService;
 
     @GetMapping(value = "allItems")
     public String getAllItem(Model model) {
@@ -35,6 +38,8 @@ public class ItemController {
     @GetMapping(value = "item/new")
     public String newItem(Model model) {
         model.addAttribute("item", new Item());
+        List<Report> reports = reportService.getAll();
+        model.addAttribute("reports", reports);
         return "ItemForm";
     }
 
@@ -42,6 +47,8 @@ public class ItemController {
     public String editItem(@RequestParam("id") String id, Model model) {
         Item item = itemService.getOne(Long.parseLong(id)).orElse(null);
         model.addAttribute("item", item);
+            List<Report> reports = reportService.getAll();
+            model.addAttribute("reports", reports);
         return "ItemForm";
     }
 

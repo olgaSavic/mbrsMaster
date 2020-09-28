@@ -20,17 +20,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b0d1d8e-3ca5-473d-96cf-52f5a15ae7ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/graphics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/graphics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myplugin/analyzer/ModelAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/analyzer/ModelAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/myplugin/generator/fmmodel/CascadeType.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/generator/fmmodel/CascadeType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/myplugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/myplugin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/uml/SpringBootModel.mdzip" beforeDir="false" afterPath="$PROJECT_DIR$/resources/uml/SpringBootModel.mdzip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/GenerateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/analyzer/ModelAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/analyzer/ModelAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myplugin/generator/fmmodel/CascadeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myplugin/generator/fmmodel/CascadeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Examination.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Examination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myplugin/GenerateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/backend/controller.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/backend/controller.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/backend/ejbclass.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/backend/ejbclass.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_details_page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_details_page.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/frontend/jsp_form.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/frontend/jsp_form.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/DiagnosisController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/DoctorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ExaminationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/PatientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/ReportController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/SymptomController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/controller/TherapyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Diagnosis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Examination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Patient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Report.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Symptom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/model/Therapy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/DiagnosisRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/DoctorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ExaminationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/PatientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/ReportRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/SymptomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/repository/TherapyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/DiagnosisService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/DoctorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ExaminationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/PatientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/ReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/SymptomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/TherapyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/DiagnosisServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/DoctorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ExaminationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ItemServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/PatientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/ReportServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/SymptomServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/java/uns/ftn/mbrs/service/impl/TherapyServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisDetails.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisForm.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mbrs-test/src/main/webapp/WEB-INF/jsp/DiagnosisList.jsp" beforeDir="false" />
@@ -88,7 +125,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mbrs-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../Program Files/MagicDraw UML/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -109,17 +146,6 @@
       <option name="MAIN_CLASS_NAME" value="com.nomagic.magicdraw.Main" />
       <module name="PluginDevelopment" />
       <option name="PROGRAM_PARAMETERS" value="-verbose -Xmx800M -Dinstall.root=“F:\Program Files\MagicDraw UML”" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,6 +174,7 @@
       <workItem from="1601067595338" duration="9140000" />
       <workItem from="1601150220991" duration="12639000" />
       <workItem from="1601200459475" duration="18552000" />
+      <workItem from="1601288182623" duration="8621000" />
     </task>
     <task id="LOCAL-00001" summary="izmene">
       <created>1601045325345</created>
@@ -184,63 +211,63 @@
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600867623526" />
     <state x="154" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1601241415276" />
-    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601232918416">
+    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601298362093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601232918416" />
+    <state x="403" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601298362093" />
     <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1601045324032">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="250" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601045324032" />
-    <state x="437" y="126" key="FileChooserDialogImpl" timestamp="1601235757617">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601150711783" />
-    <state x="437" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1601060008281" />
-    <state width="1493" height="240" key="GridCell.Tab.0.bottom" timestamp="1601248769645">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="1493" height="240" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
-    <state width="1493" height="240" key="GridCell.Tab.0.center" timestamp="1601248769645">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="1493" height="240" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
-    <state width="1493" height="240" key="GridCell.Tab.0.left" timestamp="1601248769645">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="1493" height="240" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
-    <state width="1493" height="240" key="GridCell.Tab.0.right" timestamp="1601248769645">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601236913526" />
-    <state width="1493" height="240" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
-    <state width="1493" height="240" key="GridCell.Tab.1.bottom" timestamp="1601248769646">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="1493" height="240" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601248769646" />
-    <state width="1493" height="240" key="GridCell.Tab.1.center" timestamp="1601248769646">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="1493" height="240" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601248769646" />
-    <state width="1493" height="240" key="GridCell.Tab.1.left" timestamp="1601248769645">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="1493" height="240" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
-    <state width="1493" height="240" key="GridCell.Tab.1.right" timestamp="1601248769646">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1323" height="82" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601236912948" />
-    <state width="1493" height="240" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601248769646" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1601150459406">
+    <state x="389" y="106" key="FileChooserDialogImpl" timestamp="1601288777241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601150459406" />
+    <state x="389" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601288777241" />
+    <state x="437" y="126" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1601060008281" />
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1601302571929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601302571929" />
+    <state width="1493" height="240" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1601302571929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601302571929" />
+    <state width="1493" height="240" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1601302571929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601302571929" />
+    <state width="1493" height="240" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1601302571929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601302571929" />
+    <state width="1493" height="240" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
+    <state width="1323" height="2" key="GridCell.Tab.1.bottom" timestamp="1601302571500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601302571500" />
+    <state width="1493" height="240" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601248769646" />
+    <state width="1323" height="2" key="GridCell.Tab.1.center" timestamp="1601302571500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1601302571500" />
+    <state width="1493" height="240" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601248769646" />
+    <state width="1323" height="2" key="GridCell.Tab.1.left" timestamp="1601302571500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1601302571500" />
+    <state width="1493" height="240" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601248769645" />
+    <state width="1323" height="2" key="GridCell.Tab.1.right" timestamp="1601302571500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1601302571500" />
+    <state width="1493" height="240" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601248769646" />
+    <state x="-183" y="0" key="SettingsEditor" timestamp="1601288785762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-183" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601288785762" />
     <state x="183" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1600858893458" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1601045339122">
       <screen x="0" y="0" width="1366" height="728" />
@@ -255,10 +282,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="408" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1601045331205" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1601161240745">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1601299112147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1601161240745" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1601299112147" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601219469990">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

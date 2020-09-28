@@ -21,7 +21,10 @@
                         <form:input cssClass="form-control" path="id" />
                     </div>
 
-
+                            <div class="form-group ">
+                            <form:label path="item">Item</form:label>
+                            <form:checkboxes items="${items}" path="item" element="div class='checkbox border rounded p-2' " itemValue="id"/>
+                            </div>
 
                             <div class="form-group">
                                 <form:label path="examination">Examination</form:label>
